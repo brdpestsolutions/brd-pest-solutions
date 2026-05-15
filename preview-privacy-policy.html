@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get a Free Quote | BRD Pest Solutions</title>
+    <title>Privacy Policy | BRD Pest Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/quote.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
     <style>
         .preview-badge {
@@ -30,11 +29,78 @@
             z-index: 9000;
             pointer-events: none;
         }
+
+        /* Legal page hero */
+        .legal-hero {
+            background-color: var(--color-charcoal);
+            padding: var(--space-3xl) 0 var(--space-2xl);
+        }
+        .legal-hero__eyebrow {
+            display: inline-block;
+            font-family: var(--font-headline);
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-sky-blue);
+            margin-bottom: var(--space-sm);
+        }
+        .legal-hero h1 {
+            color: #ffffff;
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            line-height: 1.15;
+        }
+
+        /* Legal body */
+        .legal-body {
+            background: #ffffff;
+            padding: var(--space-3xl) 0 var(--space-3xl);
+        }
+        .legal-content {
+            max-width: 780px;
+        }
+        .legal-content p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #2d3748;
+            margin-bottom: var(--space-lg);
+        }
+        .legal-content h2 {
+            font-size: 1.2rem;
+            color: var(--color-charcoal);
+            margin-top: var(--space-2xl);
+            margin-bottom: var(--space-md);
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        .legal-content h2:first-child {
+            margin-top: 0;
+        }
+        .legal-content strong {
+            color: var(--color-charcoal);
+            font-weight: 700;
+        }
+        .legal-content ol {
+            padding-left: var(--space-lg);
+            margin-bottom: var(--space-lg);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .legal-content ol li {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #2d3748;
+        }
+        .legal-content a {
+            color: var(--color-brd-blue);
+            text-decoration: underline;
+        }
     </style>
 </head>
-<body class="page-get-a-quote">
+<body class="page-legal">
 
-<span class="preview-badge">Preview — Get a Quote</span>
+<span class="preview-badge">Preview — Privacy Policy</span>
 
 <!-- HEADER -->
 <a href="#main" class="skip-link">Skip to content</a>
@@ -52,13 +118,11 @@
     </div>
 </div>
 
-
-
 <header class="site-header" id="site-header">
     <div class="container header__inner">
 
         <a href="preview.html" class="header__logo" aria-label="BRD Pest Solutions — Home">
-            <img src="assets/images/WordMark-BRDBlue-scaled.webp" alt="BRD Pest Solutions" width="300" height="116" loading="eager">
+            <img src="/assets/images/WordMark-BRDBlue-scaled.webp" alt="BRD Pest Solutions" width="300" height="116" loading="eager">
         </a>
 
         <nav class="nav" id="primary-nav" aria-label="Primary navigation">
@@ -102,7 +166,7 @@
             </ul>
         </nav>
 
-        <a href="preview-get-a-quote.html" class="btn btn-red header__cta" aria-current="page">Get a Free Quote</a>
+        <a href="preview-get-a-quote.html" class="btn btn-red header__cta">Get a Free Quote</a>
 
         <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
             <span class="hamburger__bar" aria-hidden="true"></span>
@@ -139,166 +203,90 @@
 </div>
 <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
 
-
 <main id="main">
 
-
-<!-- ================================================
-     1. SPLIT HERO — text left, form right
-     ================================================ -->
-<section class="quote-hero" aria-label="Get a free quote">
+<section class="legal-hero">
     <div class="container">
-        <div class="quote-hero__grid">
-
-            <!-- LEFT: headline + trust -->
-            <div class="quote-hero__content">
-                <span class="quote-hero__eyebrow">Free Quote</span>
-                <h1>Get a Free Quote.<br><em>No Commitment.</em></h1>
-                <p class="quote-hero__sub">Tell us about your pest problem and where you're located. A local BRD technician will follow up within one business day to get you scheduled.</p>
-
-                <ul class="quote-hero__trust">
-                    <li>No obligation — free quote, always</li>
-                    <li>Same-day service available in most markets</li>
-                    <li>Licensed &amp; background-checked technicians</li>
-                    <li>100% satisfaction guaranteed or we come back free</li>
-                </ul>
-
-                <div class="quote-hero__proof">
-                    <span class="quote-hero__proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <p class="quote-hero__proof-quote">"Showed up same-day, explained everything they were doing, and the problem was completely gone within a week. I'll never use another pest company."</p>
-                    <span class="quote-hero__proof-attr">&#8212; Verified BRD Customer, Atlanta</span>
-                </div>
-            </div>
-
-            <!-- RIGHT: GHL form card -->
-            <div class="quote-hero__form">
-                <div class="quote-hero__form-card">
-
-                    <div class="quote-hero__form-header">
-                        <span class="quote-hero__form-eyebrow">Get Started</span>
-                        <h2>Request Your Free Quote</h2>
-                        <p>We'll reach out within 1 business day to get you scheduled.</p>
-                    </div>
-
-                    <div class="quote-hero__form-body">
-                        <iframe
-                            src="https://connect.mixifymedia.com/widget/form/EZyJL9hhzMy7mmgJx6cy"
-                            style="width:100%;height:100%;border:none;"
-                            id="inline-EZyJL9hhzMy7mmgJx6cy"
-                            data-layout="{'id':'INLINE'}"
-                            data-trigger-type="alwaysShow"
-                            data-trigger-value=""
-                            data-activation-type="alwaysActivated"
-                            data-activation-value=""
-                            data-deactivation-type="neverDeactivate"
-                            data-deactivation-value=""
-                            data-form-name="BRD Main Website Form"
-                            data-height="710"
-                            data-layout-iframe-id="inline-EZyJL9hhzMy7mmgJx6cy"
-                            data-form-id="EZyJL9hhzMy7mmgJx6cy"
-                            title="BRD Main Website Form"
-                        >
-                        </iframe>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <script src="https://connect.mixifymedia.com/js/form_embed.js"></script>
-</section>
-
-
-<!-- ================================================
-     2. TRUST STRIP
-     ================================================ -->
-<div class="quote-trust" aria-label="Why choose BRD">
-    <div class="container">
-        <div class="quote-trust__grid">
-
-            <div class="quote-trust__item">
-                <span class="quote-trust__label">No Obligation</span>
-                <span class="quote-trust__text">Free quote, no commitment required.</span>
-            </div>
-
-            <div class="quote-trust__item">
-                <span class="quote-trust__label">1-Day Response</span>
-                <span class="quote-trust__text">We call back within one business day.</span>
-            </div>
-
-            <div class="quote-trust__item">
-                <span class="quote-trust__label">Same-Day Service</span>
-                <span class="quote-trust__text">Available in most of our markets.</span>
-            </div>
-
-            <div class="quote-trust__item">
-                <span class="quote-trust__label">100% Guaranteed</span>
-                <span class="quote-trust__text">If pests return, so do we. Free.</span>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- ================================================
-     3. WHAT HAPPENS NEXT
-     ================================================ -->
-<section class="quote-steps" aria-label="What happens after you submit">
-    <div class="container">
-
-        <div class="quote-steps__header">
-            <span class="quote-steps__eyebrow">What to Expect</span>
-            <h2>Here's What Happens After You Submit</h2>
-            <p class="quote-steps__sub">Three simple steps from your request to a pest-free home.</p>
-        </div>
-
-        <div class="quote-steps__grid">
-
-            <div class="quote-step">
-                <div class="quote-step__number" aria-hidden="true">1</div>
-                <h3>Submit Your Request</h3>
-                <p>Takes about 60 seconds. Tell us your name, number, address, and what you're dealing with. That's all we need to get started.</p>
-            </div>
-
-            <div class="quote-step">
-                <div class="quote-step__number" aria-hidden="true">2</div>
-                <h3>We Call You Back</h3>
-                <p>A local BRD expert follows up within 1 business day to learn more, answer your questions, and get you on the schedule.</p>
-            </div>
-
-            <div class="quote-step">
-                <div class="quote-step__number" aria-hidden="true">3</div>
-                <h3>Problem Solved</h3>
-                <p>Your technician arrives, performs a full inspection, treats the issue, and guarantees the result. We're not done until you are.</p>
-            </div>
-
-        </div>
-
+        <span class="legal-hero__eyebrow">Legal</span>
+        <h1>Privacy Policy</h1>
     </div>
 </section>
 
-
-<!-- ================================================
-     4. CTA / PHONE FALLBACK
-     ================================================ -->
-<section class="quote-cta" aria-label="Call us directly">
+<section class="legal-body">
     <div class="container">
-        <span class="quote-cta__eyebrow">Prefer to Call?</span>
-        <h2>Talk to a Local Expert Today</h2>
-        <a href="tel:18335059715" class="quote-cta__phone">1-833-505-9715</a>
-        <p class="quote-cta__sub">Our team is available Monday&ndash;Friday, 9AM&ndash;5PM. Happy to answer questions before you book.</p>
-        <div class="quote-cta__actions">
-            <a href="tel:18335059715" class="btn btn-red btn-lg">Call Now</a>
-            <a href="preview-services.html" class="btn btn-outline btn-lg">View Our Services</a>
+        <div class="legal-content">
+
+            <p>Thank you for your interest in BRD Pest Solutions. We value your trust and are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you interact with us. By accessing or using our website or supplying your personal information through any of our data collection forms, you agree to the terms of this Privacy Policy.</p>
+
+            <h2>Information We Collect</h2>
+
+            <p><strong>1.1 Personal Information:</strong></p>
+            <p>We may collect personally identifiable information ("Personal Information") that you voluntarily provide to us when you use our website. This may include your name, email address, phone number, postal address, and any other information you choose to provide.</p>
+
+            <p><strong>1.2 Non-Personal Information:</strong></p>
+            <p>We may also collect non-personally identifiable information ("Non-Personal Information") such as your IP address, browser type, operating system, device information, and browsing preferences.</p>
+
+            <h2>How We Use Your Information</h2>
+
+            <p><strong>2.1 Personal Information:</strong></p>
+            <p>We use the Personal Information you provide to us for the following purposes:</p>
+            <ol>
+                <li>To process and respond to your inquiries or service requests.</li>
+                <li>To provide you with information about our pest control services and promotional offers.</li>
+                <li>To send you relevant updates, newsletters, and marketing communications (with your consent, where required).</li>
+                <li>To improve our website, services, and customer support.</li>
+            </ol>
+
+            <p><strong>2.2 Non-Personal Information:</strong></p>
+            <p>Non-Personal Information is primarily used for website analytics, such as improving website functionality, optimizing content, and understanding user preferences. This information does not personally identify you.</p>
+
+            <h2>SMS Communications</h2>
+
+            <p>If you opt in to receive SMS messages from BRD Pest Solutions, we will use your phone number to send you service updates, appointment confirmations, promotional offers, and other communications related to our pest control services. Message frequency varies. Message and data rates may apply.</p>
+            <p>You may opt out at any time by replying STOP to any message. For assistance, reply HELP or contact us at <a href="mailto:info@brdpestsolutions.com">info@brdpestsolutions.com</a>.</p>
+            <p>Mobile information will not be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+
+            <h2>How We Protect Your Information</h2>
+
+            <p>We implement appropriate security measures to protect your Personal Information from unauthorized access, disclosure, alteration, or destruction. However, please note that "no data transmission over the internet or electronic storage method is 100% secure." While we strive to protect your information, we cannot guarantee its absolute security.</p>
+
+            <h2>Cookies and Similar Technologies</h2>
+
+            <p>We may use cookies, web beacons, and other similar technologies to enhance your experience on our website and gather Non-Personal Information. Cookies are small text files that are stored on your device to improve website functionality and personalize content based on your preferences. You can modify your browser settings to refuse cookies, but this may limit certain features of our website.</p>
+
+            <h2>Third-Party Links</h2>
+
+            <p>Our website may contain links to third-party websites. Please note that this Privacy Policy only applies to our website. We are not responsible for the privacy practices of third-party websites. We encourage you to review the privacy policies of those sites before providing any personal information.</p>
+
+            <h2>Disclosure of Information</h2>
+
+            <p>We do not sell, trade, or transfer your Personal Information to outside parties without your consent, except in the following situations:</p>
+            <ol>
+                <li>To our trusted service providers and partners who assist us in delivering our services (e.g., payment processors).</li>
+                <li>To comply with legal requirements, enforce our site policies, or protect our rights, property, or safety.</li>
+            </ol>
+
+            <h2>Your Rights and Choices</h2>
+
+            <p>You have the right to access, update, correct, and delete your Personal Information stored by us. If you wish to exercise any of these rights or have any privacy-related inquiries, please contact us using the information provided at the end of this policy.</p>
+
+            <h2>Children's Privacy</h2>
+
+            <p>Our website is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us, and we will promptly delete such information.</p>
+
+            <h2>Changes to the Privacy Policy</h2>
+
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. The updated version will be posted on our website with the effective date. We encourage you to review the Privacy Policy periodically for any changes.</p>
+
+            <h2>Contact Us</h2>
+
+            <p>If you have any questions, comments, or concerns about this Privacy Policy or our privacy practices, please contact us at <a href="mailto:info@brdpestsolutions.com">info@brdpestsolutions.com</a>.</p>
+
         </div>
     </div>
 </section>
-
 
 </main>
-
 
 <!-- FOOTER -->
 <footer class="site-footer" aria-label="Site footer">
@@ -352,6 +340,6 @@
     </div>
 </footer>
 
-<script src="assets/js/main.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
 </body>
 </html>

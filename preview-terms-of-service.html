@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get a Free Quote | BRD Pest Solutions</title>
+    <title>Terms of Service | BRD Pest Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/quote.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
     <style>
         .preview-badge {
@@ -30,11 +29,64 @@
             z-index: 9000;
             pointer-events: none;
         }
+
+        .legal-hero {
+            background-color: var(--color-charcoal);
+            padding: var(--space-3xl) 0 var(--space-2xl);
+        }
+        .legal-hero__eyebrow {
+            display: inline-block;
+            font-family: var(--font-headline);
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-sky-blue);
+            margin-bottom: var(--space-sm);
+        }
+        .legal-hero h1 {
+            color: #ffffff;
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            line-height: 1.15;
+        }
+
+        .legal-body {
+            background: #ffffff;
+            padding: var(--space-3xl) 0 var(--space-3xl);
+        }
+        .legal-content {
+            max-width: 780px;
+        }
+        .legal-content p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #2d3748;
+            margin-bottom: var(--space-lg);
+        }
+        .legal-content h2 {
+            font-size: 1.2rem;
+            color: var(--color-charcoal);
+            margin-top: var(--space-2xl);
+            margin-bottom: var(--space-md);
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        .legal-content h2:first-child {
+            margin-top: 0;
+        }
+        .legal-content strong {
+            color: var(--color-charcoal);
+            font-weight: 700;
+        }
+        .legal-content a {
+            color: var(--color-brd-blue);
+            text-decoration: underline;
+        }
     </style>
 </head>
-<body class="page-get-a-quote">
+<body class="page-legal">
 
-<span class="preview-badge">Preview — Get a Quote</span>
+<span class="preview-badge">Preview — Terms of Service</span>
 
 <!-- HEADER -->
 <a href="#main" class="skip-link">Skip to content</a>
@@ -52,13 +104,11 @@
     </div>
 </div>
 
-
-
 <header class="site-header" id="site-header">
     <div class="container header__inner">
 
         <a href="preview.html" class="header__logo" aria-label="BRD Pest Solutions — Home">
-            <img src="assets/images/WordMark-BRDBlue-scaled.webp" alt="BRD Pest Solutions" width="300" height="116" loading="eager">
+            <img src="/assets/images/WordMark-BRDBlue-scaled.webp" alt="BRD Pest Solutions" width="300" height="116" loading="eager">
         </a>
 
         <nav class="nav" id="primary-nav" aria-label="Primary navigation">
@@ -102,7 +152,7 @@
             </ul>
         </nav>
 
-        <a href="preview-get-a-quote.html" class="btn btn-red header__cta" aria-current="page">Get a Free Quote</a>
+        <a href="preview-get-a-quote.html" class="btn btn-red header__cta">Get a Free Quote</a>
 
         <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
             <span class="hamburger__bar" aria-hidden="true"></span>
@@ -139,166 +189,57 @@
 </div>
 <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
 
-
 <main id="main">
 
-
-<!-- ================================================
-     1. SPLIT HERO — text left, form right
-     ================================================ -->
-<section class="quote-hero" aria-label="Get a free quote">
+<section class="legal-hero">
     <div class="container">
-        <div class="quote-hero__grid">
-
-            <!-- LEFT: headline + trust -->
-            <div class="quote-hero__content">
-                <span class="quote-hero__eyebrow">Free Quote</span>
-                <h1>Get a Free Quote.<br><em>No Commitment.</em></h1>
-                <p class="quote-hero__sub">Tell us about your pest problem and where you're located. A local BRD technician will follow up within one business day to get you scheduled.</p>
-
-                <ul class="quote-hero__trust">
-                    <li>No obligation — free quote, always</li>
-                    <li>Same-day service available in most markets</li>
-                    <li>Licensed &amp; background-checked technicians</li>
-                    <li>100% satisfaction guaranteed or we come back free</li>
-                </ul>
-
-                <div class="quote-hero__proof">
-                    <span class="quote-hero__proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <p class="quote-hero__proof-quote">"Showed up same-day, explained everything they were doing, and the problem was completely gone within a week. I'll never use another pest company."</p>
-                    <span class="quote-hero__proof-attr">&#8212; Verified BRD Customer, Atlanta</span>
-                </div>
-            </div>
-
-            <!-- RIGHT: GHL form card -->
-            <div class="quote-hero__form">
-                <div class="quote-hero__form-card">
-
-                    <div class="quote-hero__form-header">
-                        <span class="quote-hero__form-eyebrow">Get Started</span>
-                        <h2>Request Your Free Quote</h2>
-                        <p>We'll reach out within 1 business day to get you scheduled.</p>
-                    </div>
-
-                    <div class="quote-hero__form-body">
-                        <iframe
-                            src="https://connect.mixifymedia.com/widget/form/EZyJL9hhzMy7mmgJx6cy"
-                            style="width:100%;height:100%;border:none;"
-                            id="inline-EZyJL9hhzMy7mmgJx6cy"
-                            data-layout="{'id':'INLINE'}"
-                            data-trigger-type="alwaysShow"
-                            data-trigger-value=""
-                            data-activation-type="alwaysActivated"
-                            data-activation-value=""
-                            data-deactivation-type="neverDeactivate"
-                            data-deactivation-value=""
-                            data-form-name="BRD Main Website Form"
-                            data-height="710"
-                            data-layout-iframe-id="inline-EZyJL9hhzMy7mmgJx6cy"
-                            data-form-id="EZyJL9hhzMy7mmgJx6cy"
-                            title="BRD Main Website Form"
-                        >
-                        </iframe>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <script src="https://connect.mixifymedia.com/js/form_embed.js"></script>
-</section>
-
-
-<!-- ================================================
-     2. TRUST STRIP
-     ================================================ -->
-<div class="quote-trust" aria-label="Why choose BRD">
-    <div class="container">
-        <div class="quote-trust__grid">
-
-            <div class="quote-trust__item">
-                <span class="quote-trust__label">No Obligation</span>
-                <span class="quote-trust__text">Free quote, no commitment required.</span>
-            </div>
-
-            <div class="quote-trust__item">
-                <span class="quote-trust__label">1-Day Response</span>
-                <span class="quote-trust__text">We call back within one business day.</span>
-            </div>
-
-            <div class="quote-trust__item">
-                <span class="quote-trust__label">Same-Day Service</span>
-                <span class="quote-trust__text">Available in most of our markets.</span>
-            </div>
-
-            <div class="quote-trust__item">
-                <span class="quote-trust__label">100% Guaranteed</span>
-                <span class="quote-trust__text">If pests return, so do we. Free.</span>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- ================================================
-     3. WHAT HAPPENS NEXT
-     ================================================ -->
-<section class="quote-steps" aria-label="What happens after you submit">
-    <div class="container">
-
-        <div class="quote-steps__header">
-            <span class="quote-steps__eyebrow">What to Expect</span>
-            <h2>Here's What Happens After You Submit</h2>
-            <p class="quote-steps__sub">Three simple steps from your request to a pest-free home.</p>
-        </div>
-
-        <div class="quote-steps__grid">
-
-            <div class="quote-step">
-                <div class="quote-step__number" aria-hidden="true">1</div>
-                <h3>Submit Your Request</h3>
-                <p>Takes about 60 seconds. Tell us your name, number, address, and what you're dealing with. That's all we need to get started.</p>
-            </div>
-
-            <div class="quote-step">
-                <div class="quote-step__number" aria-hidden="true">2</div>
-                <h3>We Call You Back</h3>
-                <p>A local BRD expert follows up within 1 business day to learn more, answer your questions, and get you on the schedule.</p>
-            </div>
-
-            <div class="quote-step">
-                <div class="quote-step__number" aria-hidden="true">3</div>
-                <h3>Problem Solved</h3>
-                <p>Your technician arrives, performs a full inspection, treats the issue, and guarantees the result. We're not done until you are.</p>
-            </div>
-
-        </div>
-
+        <span class="legal-hero__eyebrow">Legal</span>
+        <h1>Terms of Service</h1>
     </div>
 </section>
 
-
-<!-- ================================================
-     4. CTA / PHONE FALLBACK
-     ================================================ -->
-<section class="quote-cta" aria-label="Call us directly">
+<section class="legal-body">
     <div class="container">
-        <span class="quote-cta__eyebrow">Prefer to Call?</span>
-        <h2>Talk to a Local Expert Today</h2>
-        <a href="tel:18335059715" class="quote-cta__phone">1-833-505-9715</a>
-        <p class="quote-cta__sub">Our team is available Monday&ndash;Friday, 9AM&ndash;5PM. Happy to answer questions before you book.</p>
-        <div class="quote-cta__actions">
-            <a href="tel:18335059715" class="btn btn-red btn-lg">Call Now</a>
-            <a href="preview-services.html" class="btn btn-outline btn-lg">View Our Services</a>
+        <div class="legal-content">
+
+            <h2>Section 1: Use of Services</h2>
+            <p>BRD Pest Solutions delivers residential and commercial pest control. Users must be at least 18 years old to access services or submit information via our website. By providing information, you authorize receiving service-related communications.</p>
+
+            <h2>Section 2: SMS Messaging Program</h2>
+            <p><strong>Program Description:</strong> BRD Pest Solutions sends text messages including appointment confirmations, inquiry follow-ups, promotional offers, account notifications, and AI-generated communications.</p>
+            <p><strong>Opt-Out Instructions:</strong> Reply "STOP" to any message to unsubscribe. You'll receive one confirmation message, then no further texts unless you re-engage.</p>
+            <p><strong>Help:</strong> Reply "HELP" or contact <a href="mailto:info@brdpestsolutions.com">info@brdpestsolutions.com</a> or <a href="tel:8016913561">801.691.3561</a> for assistance.</p>
+            <p><strong>Message &amp; Data Rates:</strong> Message and data rates may apply. Message frequency varies based on your interactions with us.</p>
+            <p><strong>Carrier Disclaimer:</strong> Wireless carriers aren't responsible for delayed messages. BRD Pest Solutions disclaims responsibility for carrier charges related to SMS.</p>
+            <p><strong>Age Restriction:</strong> SMS opt-in requires being 18 or older.</p>
+            <p><strong>Privacy:</strong> Phone numbers and SMS consent aren't shared with third parties for marketing purposes.</p>
+
+            <h2>Section 3: Consent Not Required for Purchase</h2>
+            <p>Opting into SMS communications isn't necessary to purchase services from BRD Pest Solutions.</p>
+
+            <h2>Section 4: Intellectual Property</h2>
+            <p>All website content belongs to BRD Pest Solutions and is legally protected. Reproduction or distribution requires written permission.</p>
+
+            <h2>Section 5: Limitation of Liability</h2>
+            <p>BRD Pest Solutions' liability is capped at the amount paid for the specific service involved.</p>
+
+            <h2>Section 6: Disclaimer of Warranties</h2>
+            <p>Services are provided "as is" without guarantees regarding uninterrupted access, error-free operation, or freedom from harmful components.</p>
+
+            <h2>Section 7: Governing Law</h2>
+            <p>Utah state law governs these terms without considering conflict-of-law principles.</p>
+
+            <h2>Section 8: Changes to Terms</h2>
+            <p>BRD Pest Solutions may update these terms at any time. Continued use of our website or services indicates acceptance of any modifications.</p>
+
+            <h2>Section 9: Contact Us</h2>
+            <p>Questions about these Terms of Service should be directed to <a href="mailto:info@brdpestsolutions.com">info@brdpestsolutions.com</a>.</p>
+
         </div>
     </div>
 </section>
-
 
 </main>
-
 
 <!-- FOOTER -->
 <footer class="site-footer" aria-label="Site footer">
@@ -352,6 +293,6 @@
     </div>
 </footer>
 
-<script src="assets/js/main.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
 </body>
 </html>

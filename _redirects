@@ -8,6 +8,12 @@
 /locations/san-antonio   /preview-location-san-antonio.html   200
 /locations/utah          /preview-location-utah.html          200
 
+/privacy-policy    /preview-privacy-policy.html    200
+/terms-of-service  /preview-terms-of-service.html  200
+
+/blog           /preview-blog.html           200
+/blog/*         /preview-blog-post.html      200
+
 /pest-library/german-cockroach      /preview-pest-german-cockroach.html      200
 /pest-library/american-cockroach    /preview-pest-american-cockroach.html    200
 /pest-library/fire-ant              /preview-pest-fire-ant.html              200

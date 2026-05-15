@@ -51,6 +51,7 @@
     line-height: 1;
     gap: 3px;
     margin-bottom: var(--space-md);
+    margin-left: -20px;
 }
 
 /* Override header logo colors for dark footer background */
