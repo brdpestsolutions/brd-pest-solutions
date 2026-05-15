@@ -200,44 +200,104 @@
 
 
 /* ==============================================
-   2. CTA STRIP
+   2. TRUST BAR
    ============================================== */
 
-.cta-strip {
+.trust-bar {
     background-color: var(--color-brd-blue);
     padding: var(--space-xl) 0;
 }
 
-.cta-strip .container {
+.trust-bar .container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: var(--space-lg);
 }
 
-.cta-strip__heading {
+.trust-bar__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.trust-bar__google-icon {
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+
+.trust-bar__stars {
+    display: flex;
+    gap: 2px;
+}
+
+.trust-bar__stars svg {
+    width: 14px;
+    height: 14px;
+}
+
+.trust-bar__rating {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.trust-bar__reviews {
     font-family: var(--font-headline);
-    font-weight: 700;
-    font-size: 1.15rem;
+    font-weight: 800;
+    font-size: 1.1rem;
     color: #ffffff;
-    margin-bottom: 4px;
     line-height: 1.2;
 }
 
-.cta-strip__sub {
+.trust-bar__divider {
+    display: none;
+}
+
+.trust-bar__badge-icon {
+    flex-shrink: 0;
+}
+
+.trust-bar__badge-icon svg {
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+
+.trust-bar__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.trust-bar__stat-value {
+    font-family: var(--font-headline);
+    font-weight: 700;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.78);
-    margin: 0;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.trust-bar__stat-label {
+    font-size: 0.76rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 500;
 }
 
 @media (min-width: 768px) {
-    .cta-strip .container {
+    .trust-bar .container {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
 
-    .cta-strip__text {
-        flex: 1;
+    .trust-bar__divider {
+        display: block;
+        width: 1px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.15);
+        flex-shrink: 0;
     }
 }
 
