@@ -12,6 +12,71 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/services.css">
     <style>
+
+        /* Service Steps — inlined to prevent cache miss on services.css */
+        .service-steps {
+            padding: var(--space-3xl) 0;
+            background: #f8fafb;
+        }
+        .service-steps__header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+        .service-steps h2 {
+            color: var(--color-charcoal);
+        }
+        .service-steps__eyebrow {
+            display: inline-block;
+            font-family: var(--font-headline);
+            font-weight: 700;
+            font-size: 0.65rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-brd-blue);
+            margin-bottom: var(--space-md);
+        }
+        .service-steps__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+        }
+        @media (min-width: 768px) {
+            .service-steps__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .service-step {
+            text-align: center;
+            padding: var(--space-xl);
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+        .service-step__num {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--color-brd-blue);
+            color: #ffffff;
+            font-family: var(--font-headline);
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-lg);
+        }
+        .service-step h3 {
+            color: var(--color-charcoal);
+            font-size: 1.1rem;
+            margin-bottom: var(--space-sm);
+        }
+        .service-step p {
+            color: #4a5568;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
         .preview-badge {
             position: fixed; bottom: 20px; right: 20px;
             background: rgba(13,163,221,0.12); border: 1px solid rgba(13,163,221,0.35);
