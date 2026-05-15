@@ -1,6 +1,23 @@
 (function () {
     'use strict';
 
+    /* ---- Promo bar dismiss ---- */
+    const promoBar = document.getElementById('promo-bar');
+    if (promoBar) {
+        if (sessionStorage.getItem('brd_promo_dismissed')) {
+            document.body.classList.add('no-promo');
+            promoBar.setAttribute('hidden', '');
+        }
+        const dismissBtn = document.getElementById('promo-dismiss');
+        if (dismissBtn) {
+            dismissBtn.addEventListener('click', () => {
+                document.body.classList.add('no-promo');
+                sessionStorage.setItem('brd_promo_dismissed', '1');
+                setTimeout(() => promoBar.setAttribute('hidden', ''), 350);
+            });
+        }
+    }
+
     const header   = document.getElementById('site-header');
     const hamburger = document.getElementById('hamburger');
     const menu     = document.getElementById('mobile-menu');
