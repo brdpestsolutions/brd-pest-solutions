@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Online | BRD Pest Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/buy-online.css">
+
+    <style>
+        body { background-color: #f4f7f9; }
+        .preview-badge {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(13, 163, 221, 0.12);
+            border: 1px solid rgba(13, 163, 221, 0.35);
+            color: var(--color-sky-blue);
+            font-family: var(--font-headline);
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: var(--radius-sm);
+            z-index: 9000;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="page-buy-online">
+
+<span class="preview-badge">Preview — Buy Online</span>
+
+<!-- HEADER -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header" id="site-header">
+    <div class="container header__inner">
+
+        <a href="preview.html" class="header__logo" aria-label="BRD Pest Solutions — Home">
+            <img src="assets/images/WordMark-BRDBlue-scaled.webp" alt="BRD Pest Solutions" width="300" height="116" loading="eager">
+        </a>
+
+        <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+            <ul class="nav__list">
+                <li><a href="preview-services.html">Services</a></li>
+                <li><a href="preview-pest-library.html">Pest Library</a></li>
+                <li class="nav__item--has-dropdown">
+                    <a href="preview-locations.html">Locations</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Georgia</span>
+                            <a href="preview-location-atlanta.html">Atlanta</a>
+                        </li>
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Maryland</span>
+                            <a href="/locations/maryland">Maryland</a>
+                        </li>
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Oklahoma</span>
+                            <a href="/locations/oklahoma-city">Oklahoma City</a>
+                        </li>
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Texas</span>
+                            <a href="/locations/austin">Austin</a>
+                            <a href="/locations/dallas">Dallas</a>
+                            <a href="/locations/houston">Houston</a>
+                            <a href="/locations/san-antonio">San Antonio</a>
+                        </li>
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Utah</span>
+                            <a href="/locations/utah">Utah</a>
+                        </li>
+                        <li class="nav__dropdown-divider"></li>
+                        <li class="nav__dropdown-all">
+                            <a href="preview-locations.html">View All Locations &rarr;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="preview-about.html">About</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+
+        <a href="preview-get-a-quote.html" class="btn btn-red header__cta">Get a Free Quote</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="hamburger__bar" aria-hidden="true"></span>
+            <span class="hamburger__bar" aria-hidden="true"></span>
+            <span class="hamburger__bar" aria-hidden="true"></span>
+        </button>
+
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <nav>
+        <ul class="mobile-menu__list">
+            <li><a href="preview-services.html"       class="mobile-menu__link">Services</a></li>
+            <li><a href="preview-pest-library.html"   class="mobile-menu__link">Pest Library</a></li>
+            <li>
+                <a href="preview-locations.html" class="mobile-menu__link">Locations</a>
+                <ul class="mobile-menu__sub">
+                    <li><a href="preview-location-atlanta.html" class="mobile-menu__sub-link">Atlanta, GA</a></li>
+                    <li><a href="/locations/maryland"           class="mobile-menu__sub-link">Maryland</a></li>
+                    <li><a href="/locations/oklahoma-city"      class="mobile-menu__sub-link">Oklahoma City, OK</a></li>
+                    <li><a href="/locations/austin"             class="mobile-menu__sub-link">Austin, TX</a></li>
+                    <li><a href="/locations/dallas"             class="mobile-menu__sub-link">Dallas, TX</a></li>
+                    <li><a href="/locations/houston"            class="mobile-menu__sub-link">Houston, TX</a></li>
+                    <li><a href="/locations/san-antonio"        class="mobile-menu__sub-link">San Antonio, TX</a></li>
+                    <li><a href="/locations/utah"               class="mobile-menu__sub-link">Utah</a></li>
+                </ul>
+            </li>
+            <li><a href="preview-about.html" class="mobile-menu__link">About</a></li>
+            <li><a href="/blog"              class="mobile-menu__link">Blog</a></li>
+        </ul>
+        <a href="preview-get-a-quote.html" class="btn btn-red mobile-menu__cta">Get a Free Quote</a>
+    </nav>
+</div>
+<div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+
+
+<main id="main">
+
+
+    <!-- HERO -->
+    <section class="buy-hero" aria-label="Buy pest control online">
+        <div class="container">
+            <span class="buy-hero__eyebrow">Buy Online</span>
+            <h1>Start Service Online.<br><em>No Phone Call Needed.</em></h1>
+            <p class="buy-hero__sub">Select your service, see transparent pricing, and pay securely &mdash; all in about three minutes.</p>
+        </div>
+    </section>
+
+
+    <!-- MULTI-STEP FLOW -->
+    <section class="buy-flow" aria-label="Online service checkout">
+        <div class="container">
+            <div class="buy-flow__inner">
+
+                <!-- Step card -->
+                <div class="buy-card" id="buy-card">
+
+                    <div class="buy-progress" id="buy-progress" aria-hidden="true">
+                        <div class="buy-progress__dot" data-step="1">1</div>
+                        <div class="buy-progress__line"></div>
+                        <div class="buy-progress__dot" data-step="2">2</div>
+                        <div class="buy-progress__line"></div>
+                        <div class="buy-progress__dot" data-step="3">3</div>
+                        <div class="buy-progress__line"></div>
+                        <div class="buy-progress__dot" data-step="4">4</div>
+                        <div class="buy-progress__line"></div>
+                        <div class="buy-progress__dot" data-step="5">5</div>
+                    </div>
+
+                    <!-- Step 1: Choose Service -->
+                    <div class="buy-step" id="step-1">
+                        <span class="buy-step__label">Step 1 of 5</span>
+                        <h2 class="buy-step__title">Choose Your Service</h2>
+                        <p class="buy-step__sub">Select the service you'd like to start today.</p>
+
+                        <div class="service-cards" role="radiogroup" aria-label="Select a service">
+                            <button class="service-card is-selected" data-service="general-pest" role="radio" aria-checked="true" type="button">
+                                <div class="service-card__icon" aria-hidden="true">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="13" cy="10" r="4" fill="#0da3dd" opacity="0.8"/>
+                                        <circle cx="13" cy="16" r="3" fill="#0da3dd"/>
+                                        <line x1="5" y1="8" x2="9" y2="11" stroke="#0da3dd" stroke-width="1.5" stroke-linecap="round"/>
+                                        <line x1="21" y1="8" x2="17" y2="11" stroke="#0da3dd" stroke-width="1.5" stroke-linecap="round"/>
+                                        <line x1="4" y1="14" x2="10" y2="14" stroke="#0da3dd" stroke-width="1.5" stroke-linecap="round"/>
+                                        <line x1="22" y1="14" x2="16" y2="14" stroke="#0da3dd" stroke-width="1.5" stroke-linecap="round"/>
+                                        <line x1="6" y1="20" x2="10" y2="17" stroke="#0da3dd" stroke-width="1.5" stroke-linecap="round"/>
+                                        <line x1="20" y1="20" x2="16" y2="17" stroke="#0da3dd" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="service-card__body">
+                                    <span class="service-card__name">General Pest Control</span>
+                                    <span class="service-card__desc">Starting at $49.99/mo &mdash; quarterly service</span>
+                                </div>
+                                <span class="service-card__check" aria-hidden="true"></span>
+                            </button>
+                        </div>
+
+                        <div class="buy-step__actions">
+                            <button class="btn btn-red btn-lg buy-next" data-next="2" type="button">Continue &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Your Info -->
+                    <div class="buy-step" id="step-2">
+                        <span class="buy-step__label">Step 2 of 5</span>
+                        <h2 class="buy-step__title">About You</h2>
+                        <p class="buy-step__sub">We'll use this to confirm service availability at your address and set up your account.</p>
+
+                        <div class="buy-form" id="form-info">
+                            <div class="buy-form__row">
+                                <div class="buy-field">
+                                    <label class="buy-field__label" for="first-name">First Name</label>
+                                    <input class="buy-field__input" type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+                                </div>
+                                <div class="buy-field">
+                                    <label class="buy-field__label" for="last-name">Last Name</label>
+                                    <input class="buy-field__input" type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+                                </div>
+                            </div>
+                            <div class="buy-form__row">
+                                <div class="buy-field">
+                                    <label class="buy-field__label" for="phone">Phone Number</label>
+                                    <input class="buy-field__input" type="tel" id="phone" name="phone" autocomplete="tel" required>
+                                </div>
+                                <div class="buy-field">
+                                    <label class="buy-field__label" for="email">Email Address</label>
+                                    <input class="buy-field__input" type="email" id="email" name="email" autocomplete="email" required>
+                                </div>
+                            </div>
+                            <div class="buy-field">
+                                <label class="buy-field__label" for="address">Service Address</label>
+                                <input class="buy-field__input" type="text" id="address" name="address" autocomplete="street-address" placeholder="123 Main St, City, State, ZIP" required>
+                            </div>
+                        </div>
+
+                        <div class="buy-step__actions">
+                            <button class="btn btn-outline buy-back" data-back="1" type="button">&larr; Back</button>
+                            <button class="btn btn-red btn-lg buy-next" data-next="3" type="button">Continue &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Choose Plan -->
+                    <div class="buy-step" id="step-3">
+                        <span class="buy-step__label">Step 3 of 5</span>
+                        <h2 class="buy-step__title">Choose Your Plan</h2>
+                        <p class="buy-step__sub">Transparent pricing. No surprises.</p>
+
+                        <div class="plan-cards" role="radiogroup" aria-label="Select a plan">
+                            <button class="plan-card is-selected" data-plan="monthly" role="radio" aria-checked="true" type="button">
+                                <span class="plan-card__badge">Most Popular</span>
+                                <div class="plan-card__header">
+                                    <span class="plan-card__name">Monthly Plan</span>
+                                    <div class="plan-card__price">
+                                        <span class="plan-card__amount">$49.99</span>
+                                        <span class="plan-card__period">/mo</span>
+                                    </div>
+                                </div>
+                                <ul class="plan-card__includes">
+                                    <li>Quarterly exterior &amp; interior treatments</li>
+                                    <li>Coverage for 20+ common household pests</li>
+                                    <li>100% satisfaction guarantee &mdash; we come back free</li>
+                                    <li>Cancel anytime with 30 days notice</li>
+                                </ul>
+                            </button>
+                        </div>
+
+                        <div class="buy-step__actions">
+                            <button class="btn btn-outline buy-back" data-back="2" type="button">&larr; Back</button>
+                            <button class="btn btn-red btn-lg buy-next" data-next="4" type="button">Add to Cart &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Appointment Preference -->
+                    <div class="buy-step" id="step-4">
+                        <span class="buy-step__label">Step 4 of 5</span>
+                        <h2 class="buy-step__title">Appointment Preference</h2>
+                        <p class="buy-step__sub">We'll call to confirm your first visit. Let us know what works best.</p>
+
+                        <div class="buy-form" id="form-appt">
+                            <div class="buy-form__row">
+                                <div class="buy-field">
+                                    <label class="buy-field__label" for="pref-day">Preferred Day</label>
+                                    <select class="buy-field__select" id="pref-day" name="pref_day">
+                                        <option value="">No preference</option>
+                                        <option value="monday">Monday</option>
+                                        <option value="tuesday">Tuesday</option>
+                                        <option value="wednesday">Wednesday</option>
+                                        <option value="thursday">Thursday</option>
+                                        <option value="friday">Friday</option>
+                                    </select>
+                                </div>
+                                <div class="buy-field">
+                                    <label class="buy-field__label" for="pref-time">Preferred Time</label>
+                                    <select class="buy-field__select" id="pref-time" name="pref_time">
+                                        <option value="">No preference</option>
+                                        <option value="morning">Morning (8AM&ndash;12PM)</option>
+                                        <option value="afternoon">Afternoon (12PM&ndash;5PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="buy-field">
+                                <label class="buy-field__label" for="notes">Notes for Your Technician <span class="buy-field__optional">(optional)</span></label>
+                                <textarea class="buy-field__textarea" id="notes" name="notes" rows="3" placeholder="Gate code, dogs in backyard, specific areas of concern&hellip;"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="buy-step__actions">
+                            <button class="btn btn-outline buy-back" data-back="3" type="button">&larr; Back</button>
+                            <button class="btn btn-red btn-lg buy-next" data-next="5" type="button">Continue to Payment &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Payment (mock card — no real Stripe in preview) -->
+                    <div class="buy-step" id="step-5">
+                        <span class="buy-step__label">Step 5 of 5</span>
+                        <h2 class="buy-step__title">Secure Checkout</h2>
+                        <p class="buy-step__sub">Your card details are encrypted and stored securely by Stripe. We confirm your first appointment before any charge is made.</p>
+
+                        <div class="stripe-card-element" id="card-element">
+                            <div class="stripe-card-mock">
+                                <div class="stripe-card-mock__row">
+                                    <div>
+                                        <label class="stripe-card-mock__label">Card Number</label>
+                                        <input class="stripe-card-mock__input" type="text" placeholder="1234 5678 9012 3456" maxlength="19" autocomplete="cc-number">
+                                    </div>
+                                </div>
+                                <div class="stripe-card-mock__row stripe-card-mock__row--2">
+                                    <div>
+                                        <label class="stripe-card-mock__label">Expiry</label>
+                                        <input class="stripe-card-mock__input" type="text" placeholder="MM / YY" maxlength="7" autocomplete="cc-exp">
+                                    </div>
+                                    <div>
+                                        <label class="stripe-card-mock__label">CVC</label>
+                                        <input class="stripe-card-mock__input" type="text" placeholder="CVC" maxlength="4" autocomplete="cc-csc">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stripe-card-errors" id="card-errors" role="alert" aria-live="polite"></div>
+
+                        <div class="buy-trust">
+                            <span class="buy-trust__item">&#128274; SSL Encrypted</span>
+                            <span class="buy-trust__item">Secured by Stripe</span>
+                            <span class="buy-trust__item">&#10003; 100% Guaranteed</span>
+                        </div>
+
+                        <div class="buy-step__actions">
+                            <button class="btn btn-outline buy-back" data-back="4" type="button">&larr; Back</button>
+                            <button class="btn btn-red btn-lg" id="complete-order" type="button">Complete Order</button>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation -->
+                    <div class="buy-confirmation" id="buy-confirmation" hidden>
+                        <div class="buy-confirmation__icon" aria-hidden="true">&#10003;</div>
+                        <h2>You're all set.</h2>
+                        <p class="buy-confirmation__sub">Your order has been received. A local BRD technician will call you within 1 business day to confirm your first appointment.</p>
+                        <div class="buy-confirmation__what">
+                            <h3>What happens next</h3>
+                            <ol class="buy-confirmation__steps">
+                                <li>We call to confirm your preferred day and time</li>
+                                <li>Your technician arrives for the initial treatment</li>
+                                <li>Quarterly visits keep your home pest-free year-round</li>
+                            </ol>
+                        </div>
+                        <div class="buy-confirmation__actions">
+                            <a href="preview.html" class="btn btn-red btn-lg">Return to Home</a>
+                            <a href="preview-services.html" class="btn btn-outline btn-lg">View Our Services</a>
+                        </div>
+                    </div>
+
+                </div><!-- /.buy-card -->
+
+                <!-- Order Summary Sidebar -->
+                <div class="buy-summary" id="buy-summary" hidden>
+                    <div class="buy-summary__card">
+                        <h3 class="buy-summary__title">Order Summary</h3>
+
+                        <div class="buy-summary__service">
+                            <span class="buy-summary__service-name">General Pest Control</span>
+                        </div>
+
+                        <div class="buy-summary__lines">
+                            <div class="buy-summary__line">
+                                <span class="buy-summary__line-label">Plan</span>
+                                <span class="buy-summary__line-value">Monthly</span>
+                            </div>
+                            <div class="buy-summary__line">
+                                <span class="buy-summary__line-label">Service Frequency</span>
+                                <span class="buy-summary__line-value">Quarterly</span>
+                            </div>
+                        </div>
+
+                        <div class="buy-summary__address" id="summary-address-wrapper" hidden>
+                            <span class="buy-summary__address-label">Service Address</span>
+                            <span class="buy-summary__address-value" id="summary-address"></span>
+                        </div>
+
+                        <div class="buy-summary__total">
+                            <span class="buy-summary__total-label">Monthly billing</span>
+                            <span class="buy-summary__total-price">$49.99<span>/mo</span></span>
+                        </div>
+
+                        <p class="buy-summary__note">Your first appointment must be confirmed before any charge is made.</p>
+                    </div>
+
+                    <div class="buy-summary__trust">
+                        <span>&#10003; No commitment required</span>
+                        <span>&#10003; Cancel anytime with 30 days notice</span>
+                        <span>&#10003; 100% satisfaction guarantee</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+        <div class="footer__grid">
+
+            <div class="footer__brand">
+                <a href="preview.html" class="footer__logo" aria-label="BRD Pest Solutions">
+                    <span class="header__logo-brd">BRD</span>
+                    <span class="header__logo-sub">PEST SOLUTIONS</span>
+                </a>
+                <p class="footer__tagline">Pest control that gets it done.</p>
+                <p class="footer__copy">&copy; 2025 BRD Pest Solutions. All rights reserved.</p>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__heading">Quick Links</h3>
+                <ul class="footer__nav">
+                    <li><a href="preview-services.html">Services</a></li>
+                    <li><a href="preview-pest-library.html">Pest Library</a></li>
+                    <li><a href="preview-locations.html">Locations</a></li>
+                    <li><a href="preview-about.html">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="preview-get-a-quote.html">Get a Quote</a></li>
+                    <li><a href="preview-buy-online.html">Buy Online</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__areas">
+                <h3 class="footer__heading">Service Areas</h3>
+                <ul class="footer__area-list">
+                    <li><a href="preview-location-atlanta.html">Georgia</a></li>
+                    <li><a href="/locations/maryland">Maryland</a></li>
+                    <li><a href="/locations/oklahoma-city">Oklahoma</a></li>
+                    <li><a href="/locations/texas">Texas</a></li>
+                    <li><a href="/locations/utah">Utah</a></li>
+                </ul>
+                <div class="footer__contact">
+                    <h3 class="footer__heading">Ready to start?</h3>
+                    <a href="preview-get-a-quote.html" class="footer__cta-link">Get a Free Quote &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/buy-online.js" defer></script>
+</body>
+</html>

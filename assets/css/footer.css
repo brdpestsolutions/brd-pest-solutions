@@ -1,0 +1,160 @@
+/* ==============================================
+   FOOTER
+   Mobile-first — 1-col → 2-col → 3-col
+   ============================================== */
+
+.site-footer {
+    background-color: var(--color-charcoal);
+    border-top: 3px solid var(--color-sky-blue);
+    padding: var(--space-2xl) 0 var(--space-xl);
+}
+
+
+/* ---- Main grid ---- */
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+}
+
+@media (min-width: 640px) {
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: var(--space-xl);
+    }
+
+    /* Brand col spans both on tablet */
+    .footer__brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__grid {
+        grid-template-columns: 2fr 1.2fr 1.2fr;
+        gap: var(--space-3xl);
+    }
+
+    .footer__brand {
+        grid-column: auto;
+    }
+}
+
+
+/* ---- Brand column ---- */
+
+.footer__logo {
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 1;
+    gap: 3px;
+    margin-bottom: var(--space-md);
+}
+
+/* Override header logo colors for dark footer background */
+.footer__logo .header__logo-brd {
+    color: var(--color-sky-blue);
+}
+
+.footer__logo .header__logo-sub {
+    color: var(--color-white-dim);
+}
+
+.footer__tagline {
+    font-family: var(--font-headline);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--color-white-dim);
+    margin-bottom: var(--space-xl);
+    line-height: 1.4;
+}
+
+.footer__copy {
+    font-size: 0.78rem;
+    color: var(--color-white-muted);
+    line-height: 1.5;
+}
+
+
+/* ---- Section headings ---- */
+
+.footer__heading {
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-md);
+}
+
+
+/* ---- Navigation links ---- */
+
+.footer__nav,
+.footer__area-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__nav li a,
+.footer__area-list li a {
+    font-size: 0.93rem;
+    color: var(--color-white-dim);
+    transition:
+        color        var(--transition-fast),
+        padding-left var(--transition-fast);
+}
+
+.footer__nav li a:hover,
+.footer__area-list li a:hover {
+    color: var(--color-white);
+    padding-left: 5px;
+}
+
+
+/* ---- Contact / CTA ---- */
+
+.footer__contact {
+    margin-top: var(--space-xl);
+}
+
+.footer__cta-link {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--color-red);
+    letter-spacing: 0.03em;
+    transition: color var(--transition-fast);
+}
+
+.footer__cta-link:hover {
+    color: #d96f6c;
+}
+
+
+/* ---- Bottom bar ---- */
+
+.footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-md) var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(234, 245, 241, 0.08);
+}
+
+.footer__bottom a {
+    font-size: 0.78rem;
+    color: var(--color-white-muted);
+    transition: color var(--transition-fast);
+}
+
+.footer__bottom a:hover {
+    color: var(--color-white-dim);
+}

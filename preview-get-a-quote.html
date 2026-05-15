@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | BRD Pest Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/quote.css">
+
+    <style>
+        .preview-badge {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(13, 163, 221, 0.12);
+            border: 1px solid rgba(13, 163, 221, 0.35);
+            color: var(--color-sky-blue);
+            font-family: var(--font-headline);
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: var(--radius-sm);
+            z-index: 9000;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="page-get-a-quote">
+
+<span class="preview-badge">Preview — Get a Quote</span>
+
+<!-- HEADER -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header" id="site-header">
+    <div class="container header__inner">
+
+        <a href="preview.html" class="header__logo" aria-label="BRD Pest Solutions — Home">
+            <img src="assets/images/WordMark-BRDBlue-scaled.webp" alt="BRD Pest Solutions" width="300" height="116" loading="eager">
+        </a>
+
+        <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+            <ul class="nav__list">
+                <li><a href="preview-services.html">Services</a></li>
+                <li><a href="preview-pest-library.html">Pest Library</a></li>
+                <li class="nav__item--has-dropdown">
+                    <a href="preview-locations.html">Locations</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Georgia</span>
+                            <a href="preview-location-atlanta.html">Atlanta</a>
+                        </li>
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Maryland</span>
+                            <a href="/locations/maryland">Maryland</a>
+                        </li>
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Oklahoma</span>
+                            <a href="/locations/oklahoma-city">Oklahoma City</a>
+                        </li>
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Texas</span>
+                            <a href="/locations/austin">Austin</a>
+                            <a href="/locations/dallas">Dallas</a>
+                            <a href="/locations/houston">Houston</a>
+                            <a href="/locations/san-antonio">San Antonio</a>
+                        </li>
+                        <li class="nav__dropdown-group">
+                            <span class="nav__dropdown-state">Utah</span>
+                            <a href="/locations/utah">Utah</a>
+                        </li>
+                        <li class="nav__dropdown-divider"></li>
+                        <li class="nav__dropdown-all">
+                            <a href="preview-locations.html">View All Locations &rarr;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="preview-about.html">About</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+
+        <a href="preview-get-a-quote.html" class="btn btn-red header__cta" aria-current="page">Get a Free Quote</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="hamburger__bar" aria-hidden="true"></span>
+            <span class="hamburger__bar" aria-hidden="true"></span>
+            <span class="hamburger__bar" aria-hidden="true"></span>
+        </button>
+
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <nav>
+        <ul class="mobile-menu__list">
+            <li><a href="preview-services.html"       class="mobile-menu__link">Services</a></li>
+            <li><a href="preview-pest-library.html"   class="mobile-menu__link">Pest Library</a></li>
+            <li>
+                <a href="preview-locations.html" class="mobile-menu__link">Locations</a>
+                <ul class="mobile-menu__sub">
+                    <li><a href="preview-location-atlanta.html" class="mobile-menu__sub-link">Atlanta, GA</a></li>
+                    <li><a href="/locations/maryland"           class="mobile-menu__sub-link">Maryland</a></li>
+                    <li><a href="/locations/oklahoma-city"      class="mobile-menu__sub-link">Oklahoma City, OK</a></li>
+                    <li><a href="/locations/austin"             class="mobile-menu__sub-link">Austin, TX</a></li>
+                    <li><a href="/locations/dallas"             class="mobile-menu__sub-link">Dallas, TX</a></li>
+                    <li><a href="/locations/houston"            class="mobile-menu__sub-link">Houston, TX</a></li>
+                    <li><a href="/locations/san-antonio"        class="mobile-menu__sub-link">San Antonio, TX</a></li>
+                    <li><a href="/locations/utah"               class="mobile-menu__sub-link">Utah</a></li>
+                </ul>
+            </li>
+            <li><a href="preview-about.html" class="mobile-menu__link">About</a></li>
+            <li><a href="/blog"              class="mobile-menu__link">Blog</a></li>
+        </ul>
+        <a href="preview-get-a-quote.html" class="btn btn-red mobile-menu__cta">Get a Free Quote</a>
+    </nav>
+</div>
+<div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+
+
+<main id="main">
+
+
+<!-- ================================================
+     1. SPLIT HERO — text left, form right
+     ================================================ -->
+<section class="quote-hero" aria-label="Get a free quote">
+    <div class="container">
+        <div class="quote-hero__grid">
+
+            <!-- LEFT: headline + trust -->
+            <div class="quote-hero__content">
+                <span class="quote-hero__eyebrow">Free Quote</span>
+                <h1>Get a Free Quote.<br><em>No Commitment.</em></h1>
+                <p class="quote-hero__sub">Tell us about your pest problem and where you're located. A local BRD technician will follow up within one business day to get you scheduled.</p>
+
+                <ul class="quote-hero__trust">
+                    <li>No obligation — free quote, always</li>
+                    <li>Same-day service available in most markets</li>
+                    <li>Licensed &amp; background-checked technicians</li>
+                    <li>100% satisfaction guaranteed or we come back free</li>
+                </ul>
+
+                <div class="quote-hero__proof">
+                    <span class="quote-hero__proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <p class="quote-hero__proof-quote">"Showed up same-day, explained everything they were doing, and the problem was completely gone within a week. I'll never use another pest company."</p>
+                    <span class="quote-hero__proof-attr">&#8212; Verified BRD Customer, Atlanta</span>
+                </div>
+            </div>
+
+            <!-- RIGHT: GHL form card -->
+            <div class="quote-hero__form">
+                <div class="quote-hero__form-card">
+
+                    <div class="quote-hero__form-header">
+                        <span class="quote-hero__form-eyebrow">Get Started</span>
+                        <h2>Request Your Free Quote</h2>
+                        <p>We'll reach out within 1 business day to get you scheduled.</p>
+                    </div>
+
+                    <div class="quote-hero__form-body">
+                        <iframe
+                            src="https://connect.mixifymedia.com/widget/form/EZyJL9hhzMy7mmgJx6cy"
+                            style="width:100%;height:100%;border:none;"
+                            id="inline-EZyJL9hhzMy7mmgJx6cy"
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="BRD Main Website Form"
+                            data-height="710"
+                            data-layout-iframe-id="inline-EZyJL9hhzMy7mmgJx6cy"
+                            data-form-id="EZyJL9hhzMy7mmgJx6cy"
+                            title="BRD Main Website Form"
+                        >
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://connect.mixifymedia.com/js/form_embed.js"></script>
+</section>
+
+
+<!-- ================================================
+     2. TRUST STRIP
+     ================================================ -->
+<div class="quote-trust" aria-label="Why choose BRD">
+    <div class="container">
+        <div class="quote-trust__grid">
+
+            <div class="quote-trust__item">
+                <span class="quote-trust__label">No Obligation</span>
+                <span class="quote-trust__text">Free quote, no commitment required.</span>
+            </div>
+
+            <div class="quote-trust__item">
+                <span class="quote-trust__label">1-Day Response</span>
+                <span class="quote-trust__text">We call back within one business day.</span>
+            </div>
+
+            <div class="quote-trust__item">
+                <span class="quote-trust__label">Same-Day Service</span>
+                <span class="quote-trust__text">Available in most of our markets.</span>
+            </div>
+
+            <div class="quote-trust__item">
+                <span class="quote-trust__label">100% Guaranteed</span>
+                <span class="quote-trust__text">If pests return, so do we. Free.</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================================================
+     3. WHAT HAPPENS NEXT
+     ================================================ -->
+<section class="quote-steps" aria-label="What happens after you submit">
+    <div class="container">
+
+        <div class="quote-steps__header">
+            <span class="quote-steps__eyebrow">What to Expect</span>
+            <h2>Here's What Happens After You Submit</h2>
+            <p class="quote-steps__sub">Three simple steps from your request to a pest-free home.</p>
+        </div>
+
+        <div class="quote-steps__grid">
+
+            <div class="quote-step">
+                <div class="quote-step__number" aria-hidden="true">1</div>
+                <h3>Submit Your Request</h3>
+                <p>Takes about 60 seconds. Tell us your name, number, address, and what you're dealing with. That's all we need to get started.</p>
+            </div>
+
+            <div class="quote-step">
+                <div class="quote-step__number" aria-hidden="true">2</div>
+                <h3>We Call You Back</h3>
+                <p>A local BRD expert follows up within 1 business day to learn more, answer your questions, and get you on the schedule.</p>
+            </div>
+
+            <div class="quote-step">
+                <div class="quote-step__number" aria-hidden="true">3</div>
+                <h3>Problem Solved</h3>
+                <p>Your technician arrives, performs a full inspection, treats the issue, and guarantees the result. We're not done until you are.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================================================
+     4. CTA / PHONE FALLBACK
+     ================================================ -->
+<section class="quote-cta" aria-label="Call us directly">
+    <div class="container">
+        <span class="quote-cta__eyebrow">Prefer to Call?</span>
+        <h2>Talk to a Local Expert Today</h2>
+        <a href="tel:18335059715" class="quote-cta__phone">1-833-505-9715</a>
+        <p class="quote-cta__sub">Our team is available Monday&ndash;Friday, 9AM&ndash;5PM. Happy to answer questions before you book.</p>
+        <div class="quote-cta__actions">
+            <a href="tel:18335059715" class="btn btn-red btn-lg">Call Now</a>
+            <a href="preview-services.html" class="btn btn-outline btn-lg">View Our Services</a>
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+
+        <div class="footer__grid">
+
+            <div class="footer__brand">
+                <a href="preview.html" class="footer__logo" aria-label="BRD Pest Solutions">
+                    <span class="header__logo-brd">BRD</span>
+                    <span class="header__logo-sub">PEST SOLUTIONS</span>
+                </a>
+                <p class="footer__tagline">Pest control that gets it done.</p>
+                <p class="footer__copy">&copy; 2025 BRD Pest Solutions. All rights reserved.</p>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__heading">Quick Links</h3>
+                <ul class="footer__nav">
+                    <li><a href="preview-services.html">Services</a></li>
+                    <li><a href="preview-pest-library.html">Pest Library</a></li>
+                    <li><a href="preview-locations.html">Locations</a></li>
+                    <li><a href="preview-about.html">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="preview-get-a-quote.html">Get a Quote</a></li>
+                    <li><a href="preview-buy-online.html">Buy Online</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__areas">
+                <h3 class="footer__heading">Service Areas</h3>
+                <ul class="footer__area-list">
+                    <li><a href="preview-location-atlanta.html">Georgia</a></li>
+                    <li><a href="/locations/maryland">Maryland</a></li>
+                    <li><a href="/locations/oklahoma-city">Oklahoma</a></li>
+                    <li><a href="/locations/texas">Texas</a></li>
+                    <li><a href="/locations/utah">Utah</a></li>
+                </ul>
+                <div class="footer__contact">
+                    <h3 class="footer__heading">Ready to start?</h3>
+                    <a href="preview-get-a-quote.html" class="footer__cta-link">Get a Free Quote &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

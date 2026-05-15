@@ -1,0 +1,447 @@
+/* ==============================================
+   ABOUT PAGE
+   ============================================== */
+
+body.page-about #main {
+    padding-top: 0;
+}
+
+
+/* ==============================================
+   HERO
+   ============================================== */
+
+.about-hero {
+    position: relative;
+    min-height: 52vh;
+    background-color: var(--color-charcoal);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero__photo {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.about-hero__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.about-hero__photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(12, 35, 46, 0.94) 0%,
+        rgba(12, 35, 46, 0.75) 55%,
+        rgba(12, 35, 46, 0.32) 100%
+    );
+}
+
+.about-hero__content {
+    position: relative;
+    z-index: 1;
+    padding-top: calc(var(--header-height) + var(--space-2xl));
+    padding-bottom: var(--space-2xl);
+    max-width: 620px;
+}
+
+.about-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-lg);
+}
+
+.about-hero__eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-sky-blue);
+    border-radius: 1px;
+}
+
+.about-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    color: var(--color-white);
+    line-height: 1.08;
+    margin-bottom: var(--space-lg);
+}
+
+.about-hero__sub {
+    font-size: 1.05rem;
+    color: var(--color-white-dim);
+    margin-bottom: var(--space-xl);
+    max-width: 520px;
+    line-height: 1.7;
+}
+
+.about-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+
+/* ==============================================
+   ORIGIN STORY — 2-col light section
+   ============================================== */
+
+.about-story {
+    padding: var(--space-3xl) 0;
+    background: #ffffff;
+}
+
+.about-story__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .about-story__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3xl);
+    }
+}
+
+.about-story__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brd-blue);
+    margin-bottom: var(--space-md);
+}
+
+.about-story h2 {
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-lg);
+    line-height: 1.15;
+}
+
+.about-story__desc {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: var(--space-md);
+}
+
+.about-story__desc:last-of-type {
+    margin-bottom: 0;
+}
+
+.about-story__photo {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    line-height: 0;
+}
+
+.about-story__photo img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    display: block;
+}
+
+
+/* ==============================================
+   STATS BAR — 4-col blue strip
+   ============================================== */
+
+.about-stats {
+    background: var(--color-brd-blue);
+    padding: var(--space-xl) 0;
+}
+
+.about-stats__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+    .about-stats__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.about-stats__item {
+    text-align: center;
+    padding: var(--space-sm) 0;
+}
+
+.about-stats__label {
+    display: block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(234, 245, 241, 0.6);
+    margin-bottom: var(--space-xs);
+}
+
+.about-stats__value {
+    display: block;
+    font-family: var(--font-headline);
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--color-white);
+    line-height: 1.1;
+}
+
+
+/* ==============================================
+   MISSION & VALUES — dark bg + 3 cards
+   ============================================== */
+
+.about-values {
+    padding: var(--space-3xl) 0;
+    background: var(--color-charcoal);
+}
+
+.about-values__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.about-values__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-md);
+}
+
+.about-values h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.about-values__sub {
+    color: var(--color-white-dim);
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.about-values__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+    .about-values__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.about-values__card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    transition:
+        background-color var(--transition-base),
+        border-color     var(--transition-base),
+        transform        var(--transition-base);
+}
+
+.about-values__card:hover {
+    background: rgba(13, 163, 221, 0.08);
+    border-color: rgba(13, 163, 221, 0.25);
+    transform: translateY(-2px);
+}
+
+.about-values__icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(13, 163, 221, 0.1);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+    color: var(--color-sky-blue);
+}
+
+.about-values__card h3 {
+    color: var(--color-white);
+    font-size: 1.05rem;
+    margin-bottom: var(--space-sm);
+}
+
+.about-values__card p {
+    color: var(--color-white-dim);
+    font-size: 0.875rem;
+    line-height: 1.65;
+}
+
+
+/* ==============================================
+   THE BRD DIFFERENCE — light bg 3-icon grid
+   ============================================== */
+
+.about-diff {
+    padding: var(--space-3xl) 0;
+    background: #ffffff;
+}
+
+.about-diff__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.about-diff__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brd-blue);
+    margin-bottom: var(--space-md);
+}
+
+.about-diff h2 {
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-md);
+}
+
+.about-diff__sub {
+    color: #4a5568;
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.about-diff__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+}
+
+@media (min-width: 640px) {
+    .about-diff__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.about-diff__item {
+    text-align: center;
+}
+
+.about-diff__icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(0, 83, 139, 0.08);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-lg);
+    color: var(--color-brd-blue);
+}
+
+.about-diff__item h3 {
+    color: var(--color-charcoal);
+    font-size: 1.05rem;
+    margin-bottom: var(--space-sm);
+}
+
+.about-diff__item p {
+    color: #4a5568;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+
+/* ==============================================
+   CTA — charcoal with radial glow
+   ============================================== */
+
+.about-cta {
+    padding: var(--space-3xl) 0;
+    background: var(--color-charcoal);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(0, 83, 139, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.about-cta__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.about-cta h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.about-cta__sub {
+    color: var(--color-white-dim);
+    max-width: 480px;
+    margin: 0 auto var(--space-xl);
+    font-size: 1rem;
+    line-height: 1.7;
+    position: relative;
+}
+
+.about-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    position: relative;
+}

@@ -1,0 +1,597 @@
+/* ==============================================
+   LOCATION SINGLE PAGE
+   Individual city/market pages — /locations/atlanta, etc.
+   ============================================== */
+
+body.page-template-template-location #main {
+    padding-top: 0;
+}
+
+
+/* ==============================================
+   1. HERO
+   ============================================== */
+
+.location-hero {
+    position: relative;
+    min-height: 58vh;
+    background-color: var(--color-charcoal);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.location-hero__photo {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.location-hero__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.location-hero__photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(12, 35, 46, 0.92) 0%,
+        rgba(12, 35, 46, 0.72) 55%,
+        rgba(12, 35, 46, 0.30) 100%
+    );
+}
+
+.location-hero__content {
+    position: relative;
+    z-index: 1;
+    padding-top: calc(var(--header-height) + var(--space-2xl));
+    padding-bottom: var(--space-2xl);
+    max-width: 620px;
+}
+
+.location-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-lg);
+}
+
+.location-hero__eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-sky-blue);
+    border-radius: 1px;
+}
+
+.location-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    color: var(--color-white);
+    line-height: 1.08;
+    margin-bottom: var(--space-lg);
+}
+
+.location-hero h1 em {
+    font-style: normal;
+    color: var(--color-sky-blue);
+}
+
+.location-hero__sub {
+    font-size: 1.05rem;
+    color: var(--color-white-dim);
+    margin-bottom: var(--space-xl);
+    max-width: 520px;
+    line-height: 1.7;
+}
+
+.location-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+
+/* ==============================================
+   2. TRUST BAR
+   ============================================== */
+
+.location-trust {
+    background: var(--color-brd-blue);
+    padding: var(--space-lg) 0;
+}
+
+.location-trust__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md) var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .location-trust__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.location-trust__item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-white);
+}
+
+.location-trust__icon {
+    flex-shrink: 0;
+    color: var(--color-sky-blue);
+}
+
+.location-trust__label {
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+}
+
+
+/* ==============================================
+   3. SERVICES
+   ============================================== */
+
+.location-services {
+    padding: var(--space-3xl) 0;
+    background: #ffffff;
+}
+
+.location-services__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.location-services__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brd-blue);
+    margin-bottom: var(--space-md);
+}
+
+.location-services h2 {
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-md);
+}
+
+.location-services__sub {
+    color: #4a5568;
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+}
+
+.location-services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+}
+
+@media (min-width: 640px) {
+    .location-services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .location-services__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.location-service-card {
+    background: rgba(255, 255, 255, 0.93);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+    transition:
+        background-color var(--transition-base),
+        border-color     var(--transition-base),
+        box-shadow       var(--transition-base),
+        transform        var(--transition-base);
+}
+
+.location-service-card:hover {
+    background: rgba(12, 35, 46, 0.97);
+    border-color: rgba(13, 163, 221, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+    transform: translateY(-3px);
+}
+
+.location-service-card__icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 83, 139, 0.1);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-md);
+    color: var(--color-brd-blue);
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+.location-service-card:hover .location-service-card__icon {
+    background: rgba(0, 83, 139, 0.35);
+    color: var(--color-sky-blue);
+}
+
+.location-service-card h3 {
+    font-size: 1.1rem;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-sm);
+    transition: color var(--transition-base);
+}
+
+.location-service-card:hover h3 {
+    color: var(--color-white);
+}
+
+.location-service-card p {
+    font-size: 0.875rem;
+    color: #4a5568;
+    line-height: 1.65;
+    margin: 0;
+    transition: color var(--transition-base);
+}
+
+.location-service-card:hover p {
+    color: var(--color-white-dim);
+}
+
+
+/* ==============================================
+   4. LOCAL PESTS
+   ============================================== */
+
+.location-pests {
+    padding: var(--space-3xl) 0;
+    background: var(--color-charcoal);
+}
+
+.location-pests__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.location-pests__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-md);
+}
+
+.location-pests h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.location-pests__sub {
+    color: var(--color-white-dim);
+    max-width: 520px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+}
+
+.location-pests__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
+}
+
+@media (min-width: 640px) {
+    .location-pests__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .location-pests__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.pest-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition:
+        background-color var(--transition-base),
+        border-color     var(--transition-base),
+        transform        var(--transition-base);
+}
+
+.pest-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(13, 163, 221, 0.3);
+    transform: translateY(-2px);
+}
+
+.pest-card__icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(13, 163, 221, 0.1);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-md);
+    color: var(--color-sky-blue);
+    font-size: 1.4rem;
+    line-height: 1;
+    transition: background-color var(--transition-base);
+}
+
+.pest-card:hover .pest-card__icon {
+    background: rgba(13, 163, 221, 0.18);
+}
+
+.pest-card__label {
+    display: block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-xs);
+}
+
+.pest-card h3 {
+    font-size: 1.05rem;
+    color: var(--color-white);
+    margin-bottom: var(--space-sm);
+    line-height: 1.2;
+}
+
+.pest-card p {
+    font-size: 0.875rem;
+    color: var(--color-white-dim);
+    line-height: 1.65;
+    flex: 1;
+    margin: 0;
+}
+
+.location-pests__footer {
+    text-align: center;
+}
+
+
+/* ==============================================
+   5. WHY BRD LOCAL
+   ============================================== */
+
+.location-why {
+    padding: var(--space-3xl) 0;
+    background: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.location-why__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.location-why__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brd-blue);
+    margin-bottom: var(--space-md);
+}
+
+.location-why h2 {
+    color: var(--color-charcoal);
+}
+
+.location-why__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .location-why__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.location-why__item {
+    text-align: center;
+    padding: var(--space-lg);
+}
+
+.location-why__icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(0, 83, 139, 0.1);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-lg);
+    color: var(--color-brd-blue);
+}
+
+.location-why__item h3 {
+    color: var(--color-charcoal);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+}
+
+.location-why__item p {
+    color: #4a5568;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+
+/* ==============================================
+   6. SERVICE NEIGHBORHOODS
+   ============================================== */
+
+.location-areas {
+    padding: var(--space-3xl) 0;
+    background: var(--color-charcoal);
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.location-areas__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.location-areas__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-md);
+}
+
+.location-areas h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.location-areas__intro {
+    color: var(--color-white-dim);
+    font-size: 0.95rem;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.location-areas__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    justify-content: center;
+    margin-top: var(--space-2xl);
+}
+
+.location-areas__tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-family: var(--font-headline);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    color: var(--color-white-dim);
+    text-decoration: none;
+    transition:
+        background-color var(--transition-fast),
+        border-color     var(--transition-fast),
+        color            var(--transition-fast);
+}
+
+.location-areas__tag:hover {
+    background: rgba(13, 163, 221, 0.12);
+    border-color: rgba(13, 163, 221, 0.35);
+    color: var(--color-white);
+}
+
+
+/* ==============================================
+   7. CTA
+   ============================================== */
+
+.location-cta {
+    padding: var(--space-3xl) 0;
+    background: var(--color-brd-blue);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.location-cta__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(234, 245, 241, 0.7);
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.location-cta h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.location-cta__sub {
+    color: rgba(234, 245, 241, 0.85);
+    max-width: 480px;
+    margin: 0 auto var(--space-xl);
+    font-size: 1rem;
+    line-height: 1.7;
+    position: relative;
+}
+
+.location-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    position: relative;
+}

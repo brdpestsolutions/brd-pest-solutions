@@ -1,0 +1,379 @@
+/* ==============================================
+   LOCATIONS OVERVIEW PAGE
+   ============================================== */
+
+body.page-locations #main,
+body.page-template-page-locations #main {
+    padding-top: 0;
+}
+
+
+/* ==============================================
+   1. HERO
+   ============================================== */
+
+.locations-hero {
+    position: relative;
+    min-height: 52vh;
+    background-color: var(--color-charcoal);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.locations-hero__photo {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.locations-hero__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.locations-hero__photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(12, 35, 46, 0.92) 0%,
+        rgba(12, 35, 46, 0.72) 55%,
+        rgba(12, 35, 46, 0.35) 100%
+    );
+}
+
+.locations-hero__content {
+    position: relative;
+    z-index: 1;
+    padding-top: calc(var(--header-height) + var(--space-2xl));
+    padding-bottom: var(--space-2xl);
+    max-width: 620px;
+}
+
+.locations-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-lg);
+}
+
+.locations-hero__eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-sky-blue);
+    border-radius: 1px;
+}
+
+.locations-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    color: var(--color-white);
+    line-height: 1.08;
+    margin-bottom: var(--space-lg);
+}
+
+.locations-hero h1 em {
+    font-style: normal;
+    color: var(--color-sky-blue);
+}
+
+.locations-hero__sub {
+    font-size: 1.05rem;
+    color: var(--color-white-dim);
+    margin-bottom: var(--space-xl);
+    max-width: 520px;
+    line-height: 1.7;
+}
+
+.locations-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+
+/* ==============================================
+   2. LOCATION CARDS
+   ============================================== */
+
+.location-cards {
+    padding: var(--space-3xl) 0;
+    background: var(--color-charcoal);
+}
+
+.location-cards__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.location-cards__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-md);
+}
+
+.location-cards h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.location-cards__sub {
+    color: var(--color-white-dim);
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+}
+
+.location-cards__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+}
+
+@media (min-width: 640px) {
+    .location-cards__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .location-cards__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.location-card {
+    background: rgba(255, 255, 255, 0.93);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.12);
+    transition:
+        background-color var(--transition-base),
+        border-color     var(--transition-base),
+        box-shadow       var(--transition-base),
+        transform        var(--transition-base);
+}
+
+.location-card:hover {
+    background: rgba(12, 35, 46, 0.97);
+    border-color: rgba(13, 163, 221, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    transform: translateY(-3px);
+}
+
+.location-card__state {
+    display: block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brd-blue);
+    margin-bottom: var(--space-sm);
+    transition: color var(--transition-base);
+}
+
+.location-card:hover .location-card__state {
+    color: var(--color-sky-blue);
+}
+
+.location-card h3 {
+    font-size: 1.35rem;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-sm);
+    line-height: 1.15;
+    transition: color var(--transition-base);
+}
+
+.location-card:hover h3 {
+    color: var(--color-white);
+}
+
+.location-card p {
+    font-size: 0.875rem;
+    color: #4a5568;
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: var(--space-lg);
+    transition: color var(--transition-base);
+}
+
+.location-card:hover p {
+    color: var(--color-white-dim);
+}
+
+.location-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-headline);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-brd-blue);
+    margin-top: auto;
+    transition:
+        color var(--transition-base),
+        gap   var(--transition-fast);
+}
+
+.location-card:hover .location-card__cta {
+    color: var(--color-sky-blue);
+    gap: 10px;
+}
+
+
+/* ==============================================
+   3. WHY LOCAL MATTERS
+   ============================================== */
+
+.why-local {
+    padding: var(--space-3xl) 0;
+    background: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.why-local__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.why-local__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brd-blue);
+    margin-bottom: var(--space-md);
+}
+
+.why-local h2 {
+    color: var(--color-charcoal);
+}
+
+.why-local__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .why-local__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.why-local__item {
+    text-align: center;
+    padding: var(--space-lg);
+}
+
+.why-local__icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(0, 83, 139, 0.1);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-lg);
+    color: var(--color-brd-blue);
+    flex-shrink: 0;
+}
+
+.why-local__item h3 {
+    color: var(--color-charcoal);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+}
+
+.why-local__item p {
+    color: #4a5568;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+
+/* ==============================================
+   4. CTA — mirrors homepage for page independence
+   ============================================== */
+
+.locations-cta {
+    padding: var(--space-3xl) 0;
+    background: var(--color-charcoal);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(0, 83, 139, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.locations-cta__eyebrow {
+    display: inline-block;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-sky-blue);
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.locations-cta h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.locations-cta__sub {
+    color: var(--color-white-dim);
+    max-width: 480px;
+    margin: 0 auto var(--space-xl);
+    font-size: 1rem;
+    position: relative;
+}
+
+.locations-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    position: relative;
+}
