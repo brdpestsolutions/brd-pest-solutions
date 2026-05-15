@@ -8,6 +8,13 @@
 /locations/san-antonio   /preview-location-san-antonio.html   200
 /locations/utah          /preview-location-utah.html          200
 
+/services/pest-control       /preview-service-pest-control.html       200
+/services/termite-control    /preview-service-termite-control.html    200
+/services/rodent-control     /preview-service-rodent-control.html     200
+/services/mosquito-control   /preview-service-mosquito-control.html   200
+/services/bed-bugs           /preview-service-bed-bugs.html           200
+/services/protection-plans   /preview-service-protection-plans.html   200
+
 /privacy-policy    /preview-privacy-policy.html    200
 /terms-of-service  /preview-terms-of-service.html  200
 
