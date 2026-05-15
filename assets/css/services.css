@@ -666,6 +666,10 @@ body.page-template-page-services #main {
     margin-bottom: var(--space-2xl);
 }
 
+.service-steps h2 {
+    color: var(--color-charcoal);
+}
+
 .service-steps__eyebrow {
     display: inline-block;
     font-family: var(--font-headline);
