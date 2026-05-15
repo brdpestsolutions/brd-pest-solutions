@@ -7,9 +7,9 @@
  */
 
 // Image paths — update these when uploading to WP media
-$img_hero  = get_template_directory_uri() . '/assets/images/BRDTech-24.png';
-$img_why   = get_template_directory_uri() . '/assets/images/BRDTech-29.png';
-$img_areas = get_template_directory_uri() . '/assets/images/BRDTech-26.png';
+$img_hero  = get_template_directory_uri() . '/assets/images/BRDTech-24.jpg';
+$img_why   = get_template_directory_uri() . '/assets/images/BRDTech-29.jpg';
+$img_areas = get_template_directory_uri() . '/assets/images/BRDTech-26.jpg';
 
 get_header();
 ?>

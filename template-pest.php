@@ -20,7 +20,7 @@ get_header();
     <section class="pest-hero" aria-label="German Cockroach overview">
         <div class="pest-hero__photo" aria-hidden="true">
             <img
-                src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-4.png' ); ?>"
+                src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-4.jpg' ); ?>"
                 alt=""
                 width="1400"
                 height="900"
@@ -101,7 +101,7 @@ get_header();
 
                 <div class="pest-detail__photo">
                     <img
-                        src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-11.png' ); ?>"
+                        src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-11.jpg' ); ?>"
                         alt="BRD technician inspecting kitchen for cockroaches"
                         width="700"
                         height="720"

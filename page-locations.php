@@ -6,7 +6,7 @@
  * @package BRD_Pest_Solutions
  */
 
-$hero_img = get_template_directory_uri() . '/assets/images/BRDTech-5.png';
+$hero_img = get_template_directory_uri() . '/assets/images/BRDTech-5.jpg';
 
 get_header();
 ?>

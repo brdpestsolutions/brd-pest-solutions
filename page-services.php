@@ -15,7 +15,7 @@ get_header();
      ================================================ -->
 <section class="services-hero" aria-label="Services hero">
     <div class="services-hero__photo" aria-hidden="true">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-29.png' ); ?>" alt="" loading="eager">
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-29.jpg' ); ?>" alt="" loading="eager">
     </div>
     <div class="container">
         <div class="services-hero__content">
@@ -148,7 +148,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-red">Get a Free Quote</a>
             </div>
             <div class="service-detail__photo">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-8.png' ); ?>" alt="BRD technician performing general pest control treatment" loading="lazy">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-8.jpg' ); ?>" alt="BRD technician performing general pest control treatment" loading="lazy">
             </div>
         </div>
     </div>
@@ -175,7 +175,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-outline">Get a Free Quote</a>
             </div>
             <div class="service-detail__photo">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-3.png' ); ?>" alt="BRD technician performing termite inspection" loading="lazy">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-3.jpg' ); ?>" alt="BRD technician performing termite inspection" loading="lazy">
             </div>
         </div>
     </div>
@@ -202,7 +202,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-red">Get a Free Quote</a>
             </div>
             <div class="service-detail__photo">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-26.png' ); ?>" alt="BRD technician performing rodent exclusion work" loading="lazy">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-26.jpg' ); ?>" alt="BRD technician performing rodent exclusion work" loading="lazy">
             </div>
         </div>
     </div>
@@ -229,7 +229,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-outline">Get a Free Quote</a>
             </div>
             <div class="service-detail__photo">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-1.png' ); ?>" alt="BRD technician performing mosquito barrier treatment" loading="lazy">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-1.jpg' ); ?>" alt="BRD technician performing mosquito barrier treatment" loading="lazy">
             </div>
         </div>
     </div>
@@ -256,7 +256,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-red">Get a Free Quote</a>
             </div>
             <div class="service-detail__photo">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-2.png' ); ?>" alt="BRD technician performing bed bug treatment" loading="lazy">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-2.jpg' ); ?>" alt="BRD technician performing bed bug treatment" loading="lazy">
             </div>
         </div>
     </div>

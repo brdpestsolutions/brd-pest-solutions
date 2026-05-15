@@ -16,7 +16,7 @@ get_header();
     <section class="pest-hero" aria-label="Page hero">
         <div class="pest-hero__photo" aria-hidden="true">
             <img
-                src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-7.png' ); ?>"
+                src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-7.jpg' ); ?>"
                 alt=""
                 width="1400"
                 height="900"

@@ -16,7 +16,7 @@ get_header();
     <section class="about-hero" aria-label="Page hero">
         <div class="about-hero__photo" aria-hidden="true">
             <img
-                src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-20.png' ); ?>"
+                src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-20.jpg' ); ?>"
                 alt=""
                 width="1400"
                 height="900"
@@ -55,7 +55,7 @@ get_header();
 
                 <div class="about-story__photo">
                     <img
-                        src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-22.png' ); ?>"
+                        src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/BRDTech-22.jpg' ); ?>"
                         alt="BRD technician performing a thorough property inspection"
                         width="700"
                         height="920"
