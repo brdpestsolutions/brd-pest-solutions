@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Pest Control Questions Answered | BRD Pest Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+
+    <style>
+        .preview-badge {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(13, 163, 221, 0.12);
+            border: 1px solid rgba(13, 163, 221, 0.35);
+            color: var(--color-sky-blue);
+            font-family: var(--font-headline);
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: var(--radius-sm);
+            z-index: 9000;
+            pointer-events: none;
+        }
+
+        /* Hero */
+        .faq-hero {
+            background-color: var(--color-charcoal);
+            padding: var(--space-3xl) 0 var(--space-2xl);
+        }
+        .faq-hero__eyebrow {
+            display: inline-block;
+            font-family: var(--font-headline);
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-sky-blue);
+            margin-bottom: var(--space-sm);
+        }
+        .faq-hero h1 {
+            color: #ffffff;
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            line-height: 1.15;
+            margin-bottom: var(--space-md);
+        }
+        .faq-hero__sub {
+            color: rgba(234, 245, 241, 0.7);
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 520px;
+        }
+
+        /* FAQ body */
+        .faq-body {
+            background: #ffffff;
+            padding: var(--space-3xl) 0;
+        }
+        .faq-list {
+            max-width: 780px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+        .faq-item {
+            background: #f8fafb;
+            border: 1px solid rgba(0, 0, 0, 0.07);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+        }
+        .faq-item__q {
+            font-family: var(--font-headline);
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--color-charcoal);
+            margin-bottom: var(--space-md);
+            line-height: 1.3;
+        }
+        .faq-item__a {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #2d3748;
+        }
+        .faq-item__a p {
+            margin-bottom: var(--space-sm);
+        }
+        .faq-item__a p:last-child {
+            margin-bottom: 0;
+        }
+        .faq-item__a strong {
+            color: var(--color-charcoal);
+        }
+        .faq-item__a a {
+            color: var(--color-brd-blue);
+            text-decoration: underline;
+        }
+
+        /* Section divider label */
+        .faq-section-label {
+            font-family: var(--font-headline);
+            font-weight: 700;
+            font-size: 0.62rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-brd-blue);
+            margin-bottom: var(--space-md);
+            margin-top: var(--space-2xl);
+            display: block;
+        }
+        .faq-section-label:first-child {
+            margin-top: 0;
+        }
+
+        /* CTA section */
+        .faq-cta {
+            background: var(--color-charcoal);
+            padding: var(--space-3xl) 0;
+            text-align: center;
+        }
+        .faq-cta__eyebrow {
+            display: inline-block;
+            font-family: var(--font-headline);
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-sky-blue);
+            margin-bottom: var(--space-sm);
+        }
+        .faq-cta h2 {
+            color: #ffffff;
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            margin-bottom: var(--space-md);
+        }
+        .faq-cta__sub {
+            color: rgba(234, 245, 241, 0.7);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: var(--space-xl);
+        }
+        .faq-cta__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="page-faq">
+
+<span class="preview-badge">Preview — FAQ</span>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="promo-bar" id="promo-bar" role="banner" aria-label="Promotional offer">
+    <div class="promo-bar__inner">
+        <span class="promo-bar__text">&#127800; Spring Special: Bundle and Save $150 Today</span>
+        <a href="/preview-get-a-quote.html" class="promo-bar__cta">Book Now</a>
+        <button class="promo-bar__dismiss" id="promo-dismiss" aria-label="Dismiss promotion" type="button">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="1" y1="1" x2="13" y2="13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+                <line x1="13" y1="1" x2="1" y2="13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<header class="site-header" id="site-header">
+    <div class="container header__inner">
+        <a href="/preview.html" class="header__logo" aria-label="BRD Pest Solutions — Home">
+            <img src="/assets/images/WordMark-BRDBlue-scaled.webp" alt="BRD Pest Solutions" width="300" height="116" loading="eager">
+        </a>
+        <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+            <ul class="nav__list">
+                <li><a href="/preview-services.html">Services</a></li>
+                <li><a href="/preview-pest-library.html">Pest Library</a></li>
+                <li class="nav__item--has-dropdown">
+                    <a href="/preview-locations.html">Locations</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-group"><span class="nav__dropdown-state">Georgia</span><a href="/preview-location-atlanta.html">Atlanta</a></li>
+                        <li class="nav__dropdown-group"><span class="nav__dropdown-state">Maryland</span><a href="/locations/maryland">Maryland</a></li>
+                        <li class="nav__dropdown-group"><span class="nav__dropdown-state">Oklahoma</span><a href="/locations/oklahoma-city">Oklahoma City</a></li>
+                        <li class="nav__dropdown-group"><span class="nav__dropdown-state">Texas</span><a href="/locations/austin">Austin</a><a href="/locations/dallas">Dallas</a><a href="/locations/houston">Houston</a><a href="/locations/san-antonio">San Antonio</a></li>
+                        <li class="nav__dropdown-group"><span class="nav__dropdown-state">Utah</span><a href="/locations/utah">Utah</a></li>
+                        <li class="nav__dropdown-divider"></li>
+                        <li class="nav__dropdown-all"><a href="/preview-locations.html">View All Locations &rarr;</a></li>
+                    </ul>
+                </li>
+                <li><a href="/preview-about.html">About</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+        <a href="/preview-get-a-quote.html" class="btn btn-red header__cta">Get a Free Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="hamburger__bar" aria-hidden="true"></span>
+            <span class="hamburger__bar" aria-hidden="true"></span>
+            <span class="hamburger__bar" aria-hidden="true"></span>
+        </button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <nav>
+        <ul class="mobile-menu__list">
+            <li><a href="/preview-services.html" class="mobile-menu__link">Services</a></li>
+            <li><a href="/preview-pest-library.html" class="mobile-menu__link">Pest Library</a></li>
+            <li>
+                <a href="/preview-locations.html" class="mobile-menu__link">Locations</a>
+                <ul class="mobile-menu__sub">
+                    <li><a href="/preview-location-atlanta.html" class="mobile-menu__sub-link">Atlanta, GA</a></li>
+                    <li><a href="/locations/maryland" class="mobile-menu__sub-link">Maryland</a></li>
+                    <li><a href="/locations/oklahoma-city" class="mobile-menu__sub-link">Oklahoma City, OK</a></li>
+                    <li><a href="/locations/austin" class="mobile-menu__sub-link">Austin, TX</a></li>
+                    <li><a href="/locations/dallas" class="mobile-menu__sub-link">Dallas, TX</a></li>
+                    <li><a href="/locations/houston" class="mobile-menu__sub-link">Houston, TX</a></li>
+                    <li><a href="/locations/san-antonio" class="mobile-menu__sub-link">San Antonio, TX</a></li>
+                    <li><a href="/locations/utah" class="mobile-menu__sub-link">Utah</a></li>
+                </ul>
+            </li>
+            <li><a href="/preview-about.html" class="mobile-menu__link">About</a></li>
+            <li><a href="/blog" class="mobile-menu__link">Blog</a></li>
+        </ul>
+        <a href="/preview-get-a-quote.html" class="btn btn-red mobile-menu__cta">Get a Free Quote</a>
+    </nav>
+</div>
+<div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+
+<main id="main">
+
+<section class="faq-hero">
+    <div class="container">
+        <span class="faq-hero__eyebrow">Common Questions</span>
+        <h1>Pest Control Questions,<br>Answered.</h1>
+        <p class="faq-hero__sub">Straight answers to the questions we hear most — no jargon, no upsell.</p>
+    </div>
+</section>
+
+<section class="faq-body">
+    <div class="container">
+        <div class="faq-list">
+
+            <span class="faq-section-label">After Your Service</span>
+
+            <div class="faq-item">
+                <p class="faq-item__q">Why am I still seeing pests after my first treatment?</p>
+                <div class="faq-item__a">
+                    <p>This is the most common question we get — and it almost always has the same answer: <strong>it's normal, and it means the treatment is working.</strong></p>
+                    <p>Our products eliminate pests at the source, not just the ones you can see on the surface. That process takes 7–10 days. As pests try to escape treated areas, you may actually see <em>more</em> activity for a few days. They're not moving in — they're moving out.</p>
+                    <p>Give it 10 days. If you're still seeing significant activity after that, call us. We'll come back at no charge — that's what the guarantee is for.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-item__q">How long does it take for pest control to fully work?</p>
+                <div class="faq-item__a">
+                    <p>Full results typically take 2–3 treatment cycles. The first visit eliminates active pests; subsequent visits build the exterior barrier that prevents re-entry and breaks the full pest lifecycle.</p>
+                    <p>This is why one-time treatments are less effective than recurring plans — pests breed continuously, and one treatment can't catch every life stage.</p>
+                </div>
+            </div>
+
+            <span class="faq-section-label">About Pest Problems</span>
+
+            <div class="faq-item">
+                <p class="faq-item__q">Does my home have to be dirty to get pests?</p>
+                <div class="faq-item__a">
+                    <p><strong>No. Clean homes get pests too — and you shouldn't feel ashamed if you do.</strong></p>
+                    <p>Pests are looking for three things: food, water, and shelter. Even a spotless home offers all three. You can wipe down counters, sweep floors, and store food in sealed containers — and still see ants marching across your kitchen like they own the place.</p>
+                    <p>Entry points matter more than cleanliness. Gaps in weatherstripping, cracks in the foundation, and spaces around pipes are how most pests get in — regardless of how clean the interior is.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-item__q">When are pests most active?</p>
+                <div class="faq-item__a">
+                    <p>It depends on the pest. Mosquitoes and fire ants peak in summer. Termites swarm in late winter and spring. Rodents move indoors in fall as outdoor food sources dry up and temperatures drop. Cockroaches and spiders are year-round problems in most climates.</p>
+                    <p>Year-round coverage beats reactive treatment for exactly this reason — different pests become problems at different times, and a recurring plan keeps you protected through all of them.</p>
+                </div>
+            </div>
+
+            <span class="faq-section-label">DIY vs. Professional Treatment</span>
+
+            <div class="faq-item">
+                <p class="faq-item__q">Do DIY pest control methods actually work?</p>
+                <div class="faq-item__a">
+                    <p>For minor, isolated pest activity, DIY products can reduce numbers temporarily. But they almost never solve the underlying problem — because they target the pests you can see, not the colony, the entry point, or the full lifecycle.</p>
+                    <p>Professional treatment uses products and application methods not available retail, and targets the source: colonies, nesting areas, breeding sites, and entry points. The difference isn't just stronger chemicals — it's a fundamentally different approach.</p>
+                    <p>Wasting time on methods that don't work means pests keep thriving while you think you're solving the problem.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-item__q">Do ultrasonic pest repellers work?</p>
+                <div class="faq-item__a">
+                    <p><strong>No.</strong> Multiple scientific studies show ultrasonic devices have no meaningful effect on pests — they don't repel rodents, insects, or spiders. The research is consistent and clear.</p>
+                    <p>Save the $30–50 and spend it on weatherstripping and caulk to seal actual entry points. That will do more for your pest situation than any electronic device on the market.</p>
+                </div>
+            </div>
+
+            <span class="faq-section-label">Termites</span>
+
+            <div class="faq-item">
+                <p class="faq-item__q">Does homeowner's insurance cover termite damage?</p>
+                <div class="faq-item__a">
+                    <p><strong>Typically no.</strong> Most homeowner's insurance policies exclude termite damage because it's considered a preventable problem — not a sudden, accidental event like a fire or storm.</p>
+                    <p>The numbers make preventive treatment an easy decision: termites cause over $5 billion in property damage annually in the US, the average repair bill is $3,000, and severe infestations can exceed $10,000. An annual inspection costs a fraction of that.</p>
+                    <p>By the time most homeowners realize there's a problem, they've been living with it for months — because termites eat from the inside out, and damage isn't visible until it's advanced.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-item__q">What are the early signs of termites?</p>
+                <div class="faq-item__a">
+                    <p>The most common early signs include:</p>
+                    <p><strong>Mud tubes</strong> — pencil-width tunnels along your foundation walls, often tan or brown in color. Subterranean termites use these to travel between soil and wood.</p>
+                    <p><strong>Swarmer wings</strong> — discarded wings near windows and doors in late winter or spring, left behind when reproductive termites emerge to start new colonies.</p>
+                    <p><strong>Hollow-sounding wood</strong> — tap wooden beams, floors, or window frames. A hollow sound suggests termites have been feeding inside.</p>
+                    <p><strong>Small holes in drywall</strong> — sometimes accompanied by small piles of pellets (drywood termite droppings).</p>
+                    <p>If you spot any of these, don't wait. The longer termites go undetected, the more expensive the damage.</p>
+                </div>
+            </div>
+
+            <span class="faq-section-label">BRD's Service</span>
+
+            <div class="faq-item">
+                <p class="faq-item__q">What's included in a BRD pest control visit?</p>
+                <div class="faq-item__a">
+                    <p>Every standard visit follows a 5-step process:</p>
+                    <p><strong>1. Inspection</strong> — We identify active entry points, nesting areas, and conditions attracting pests to your property.</p>
+                    <p><strong>2. Exterior Barrier</strong> — Your foundation perimeter is treated to stop pests before they reach your door.</p>
+                    <p><strong>3. Yard Treatment</strong> — Breeding and harborage areas in your yard are targeted at the source.</p>
+                    <p><strong>4. Interior Treatment</strong> — Baseboards, cracks, and interior problem areas are treated with EPA-approved, family-safe products.</p>
+                    <p><strong>5. Follow-Up</strong> — Your next service is scheduled. If pests return before then, we come back at no charge.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-item__q">What if pests come back between scheduled visits?</p>
+                <div class="faq-item__a">
+                    <p>We come back at no additional charge. That's our guarantee — not fine print, not a qualification. If pests return between scheduled services, call or text us and we'll schedule a re-service visit.</p>
+                    <p>We don't consider a job done until you do.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="faq-cta">
+    <div class="container">
+        <span class="faq-cta__eyebrow">Still Have Questions?</span>
+        <h2>Talk to a Local BRD Technician</h2>
+        <p class="faq-cta__sub">No pressure, no judgment. Get a free quote or just ask — we're here to help.</p>
+        <div class="faq-cta__actions">
+            <a href="/preview-get-a-quote.html" class="btn btn-red btn-lg">Get a Free Quote</a>
+            <a href="tel:18335059715" class="btn btn-outline btn-lg">Call 1-833-505-9715</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <a href="/preview.html" class="footer__logo" aria-label="BRD Pest Solutions">
+                    <img src="/assets/images/WordMark-White.png" alt="BRD Pest Solutions" width="200" height="78" loading="lazy">
+                </a>
+                <p class="footer__tagline">Pest control that gets it done.</p>
+                <p class="footer__copy">&copy; 2025 BRD Pest Solutions. All rights reserved.</p>
+            </div>
+            <div class="footer__links">
+                <h3 class="footer__heading">Quick Links</h3>
+                <ul class="footer__nav">
+                    <li><a href="/preview-services.html">Services</a></li>
+                    <li><a href="/preview-pest-library.html">Pest Library</a></li>
+                    <li><a href="/preview-locations.html">Locations</a></li>
+                    <li><a href="/preview-about.html">About</a></li>
+                    <li><a href="/preview-get-a-quote.html">Contact</a></li>
+                    <li><a href="/preview-get-a-quote.html">Get a Quote</a></li>
+                    <li><a href="/preview-buy-online.html">Buy Online</a></li>
+                </ul>
+            </div>
+            <div class="footer__areas">
+                <h3 class="footer__heading">Service Areas</h3>
+                <ul class="footer__area-list">
+                    <li><a href="/preview-location-atlanta.html">Georgia</a></li>
+                    <li><a href="/locations/maryland">Maryland</a></li>
+                    <li><a href="/locations/oklahoma-city">Oklahoma</a></li>
+                    <li><a href="/preview-locations.html">Texas</a></li>
+                    <li><a href="/locations/utah">Utah</a></li>
+                </ul>
+                <div class="footer__contact">
+                    <h3 class="footer__heading">Ready to start?</h3>
+                    <a href="/preview-get-a-quote.html" class="footer__cta-link">Get a Free Quote &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="/preview-privacy-policy.html">Privacy Policy</a>
+            <a href="/preview-terms-of-service.html">Terms of Service</a>
+            <a href="/preview-faq.html">FAQ</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

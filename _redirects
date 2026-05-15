@@ -17,6 +17,7 @@
 
 /privacy-policy    /preview-privacy-policy.html    200
 /terms-of-service  /preview-terms-of-service.html  200
+/faq               /preview-faq.html               200
 
 /blog           /preview-blog.html           200
 /blog/*         /preview-blog-post.html      200

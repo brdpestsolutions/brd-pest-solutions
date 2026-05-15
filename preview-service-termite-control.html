@@ -20,6 +20,55 @@
             text-transform: uppercase; padding: 5px 12px;
             border-radius: var(--radius-sm); z-index: 9000; pointer-events: none;
         }
+        .termite-stats {
+            background: var(--color-brd-blue);
+            padding: var(--space-xl) 0;
+        }
+        .termite-stats__grid {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+            align-items: center;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .termite-stats__grid {
+                flex-direction: row;
+                justify-content: center;
+                gap: 0;
+            }
+        }
+        .termite-stats__item {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+            padding: 0 var(--space-2xl);
+            flex: 1;
+        }
+        .termite-stats__value {
+            font-family: var(--font-headline);
+            font-weight: 800;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: #ffffff;
+            line-height: 1.1;
+        }
+        .termite-stats__label {
+            font-size: 0.875rem;
+            color: rgba(234, 245, 241, 0.78);
+            line-height: 1.5;
+        }
+        .termite-stats__divider {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .termite-stats__divider {
+                display: block;
+                width: 1px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.2);
+                flex-shrink: 0;
+            }
+        }
     </style>
 </head>
 <body class="page-service-termite-control">
@@ -115,6 +164,27 @@
             <div class="services-hero__actions">
                 <a href="/preview-get-a-quote.html" class="btn btn-red btn-lg">Get a Free Quote</a>
                 <a href="/preview-services.html" class="btn btn-outline btn-lg">All Services &larr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="termite-stats" aria-label="Termite damage statistics">
+    <div class="container">
+        <div class="termite-stats__grid">
+            <div class="termite-stats__item">
+                <span class="termite-stats__value">$5 Billion</span>
+                <span class="termite-stats__label">Termite damage in the US every year</span>
+            </div>
+            <div class="termite-stats__divider" aria-hidden="true"></div>
+            <div class="termite-stats__item">
+                <span class="termite-stats__value">$3,000+</span>
+                <span class="termite-stats__label">Average termite repair cost — often $10,000+</span>
+            </div>
+            <div class="termite-stats__divider" aria-hidden="true"></div>
+            <div class="termite-stats__item">
+                <span class="termite-stats__value">Not Covered</span>
+                <span class="termite-stats__label">Most homeowner's insurance excludes termite damage</span>
             </div>
         </div>
     </div>
