@@ -1,7 +1,7 @@
 <?php
 /**
  * page-services.php
- * Services overview page — template auto-loads for /services slug.
+ * Services overview page, template auto-loads for /services slug.
  *
  * @package BRD_Pest_Solutions
  */
@@ -21,7 +21,7 @@ get_header();
         <div class="services-hero__content">
             <span class="services-hero__eyebrow">What We Treat</span>
             <h1>Whatever Got In, <em>We'll Get It Out.</em></h1>
-            <p class="services-hero__sub">BRD handles everything from common household pests to serious infestations — with local teams, proven treatments, and a 100% satisfaction guarantee.</p>
+            <p class="services-hero__sub">BRD handles everything from common household pests to serious infestations, with local teams, proven treatments, and a 100% satisfaction guarantee.</p>
             <div class="services-hero__actions">
                 <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-red btn-lg">Get a Free Quote</a>
                 <a href="tel:18335059715" class="btn btn-outline btn-lg">Call 1-833-505-9715</a>
@@ -45,20 +45,20 @@ get_header();
 
         <div class="services-cards__grid">
 
-            <a href="#general-pest-control" class="services-overview-card">
+            <a href="<?php echo esc_url( home_url( '/pest-control/' ) ); ?>" class="services-overview-card">
                 <div class="services-overview-card__icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
                     </svg>
                 </div>
                 <h3>General Pest Control</h3>
-                <p>Ants, spiders, cockroaches, silverfish, and over 30 other household pests — eliminated and kept out.</p>
+                <p>Ants, spiders, cockroaches, silverfish, and over 30 other household pests, eliminated and kept out.</p>
                 <span class="services-overview-card__cta">Learn more
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
                 </span>
             </a>
 
-            <a href="#termite-control" class="services-overview-card">
+            <a href="<?php echo esc_url( home_url( '/termite-control/' ) ); ?>" class="services-overview-card">
                 <div class="services-overview-card__icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
@@ -71,20 +71,20 @@ get_header();
                 </span>
             </a>
 
-            <a href="#rodent-control" class="services-overview-card">
+            <a href="<?php echo esc_url( home_url( '/rodent-control/' ) ); ?>" class="services-overview-card">
                 <div class="services-overview-card__icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                     </svg>
                 </div>
                 <h3>Rodent Control</h3>
-                <p>Full exclusion, removal, and sealing. We eliminate the population and close off how they got in.</p>
+                <p>Locating, trapping, and removing rodents. We service your traps quarterly, checking, clearing, and refreshing to keep activity under control.</p>
                 <span class="services-overview-card__cta">Learn more
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
                 </span>
             </a>
 
-            <a href="#mosquito-control" class="services-overview-card">
+            <a href="<?php echo esc_url( home_url( '/mosquito-control/' ) ); ?>" class="services-overview-card">
                 <div class="services-overview-card__icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/>
@@ -97,27 +97,40 @@ get_header();
                 </span>
             </a>
 
-            <a href="#bed-bug-treatment" class="services-overview-card">
+            <a href="<?php echo esc_url( home_url( '/bed-bugs/' ) ); ?>" class="services-overview-card">
                 <div class="services-overview-card__icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M2 9V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3"/><path d="M2 11v9"/><path d="M22 11v9"/><path d="M2 15h20"/><path d="M6 15v5"/><path d="M18 15v5"/>
                     </svg>
                 </div>
                 <h3>Bed Bug Treatment</h3>
-                <p>Complete elimination — not just surface treatment. We target every life stage so they don't come back.</p>
+                <p>Complete elimination, not just surface treatment. We target every life stage so they don't come back.</p>
                 <span class="services-overview-card__cta">Learn more
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
                 </span>
             </a>
 
-            <a href="#protection-plans" class="services-overview-card">
+            <a href="<?php echo esc_url( home_url( '/insulation-services/' ) ); ?>" class="services-overview-card">
+                <div class="services-overview-card__icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v16"/><path d="M15 4v16"/><path d="M4 15h16"/>
+                    </svg>
+                </div>
+                <h3>Insulation Services</h3>
+                <p>Attic insulation inspection, capping, removal, and replacement to improve comfort, efficiency, noise control, and pest protection.</p>
+                <span class="services-overview-card__cta">Learn more
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                </span>
+            </a>
+
+            <a href="<?php echo esc_url( home_url( '/protection-plans/' ) ); ?>" class="services-overview-card services-overview-card--wide">
                 <div class="services-overview-card__icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                     </svg>
                 </div>
                 <h3>Protection Plans</h3>
-                <p>Year-round coverage from one recurring plan. Set it and forget it — we handle the rest.</p>
+                <p>Year-round coverage from one recurring plan. Set it and forget it, we handle the rest.</p>
                 <span class="services-overview-card__cta">View plans
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
                 </span>
@@ -164,7 +177,7 @@ get_header();
             <div class="service-detail__text">
                 <span class="service-detail__eyebrow">Termite Control</span>
                 <h2>Stop the Silent Destroyer Before It's Too Late.</h2>
-                <p class="service-detail__desc">Termites cause billions in property damage every year — and most homeowners don't know they have them until it's serious. BRD's termite control combines thorough inspections with targeted treatment plans designed to eliminate active colonies and protect your home long-term.</p>
+                <p class="service-detail__desc">Termites cause billions in property damage every year, and most homeowners don't know they have them until it's serious. BRD's termite control combines thorough inspections with targeted treatment plans designed to eliminate active colonies and protect your home long-term.</p>
                 <ul class="service-detail__bullets">
                     <li>Full home inspection &amp; assessment</li>
                     <li>Subterranean and drywood termite treatment</li>
@@ -191,7 +204,7 @@ get_header();
             <div class="service-detail__text">
                 <span class="service-detail__eyebrow">Rodent Control</span>
                 <h2>Find Them. Remove Them. Keep Them Out.</h2>
-                <p class="service-detail__desc">Mice and rats don't just damage property — they carry disease and contaminate food. BRD's rodent control goes beyond trapping: we identify and seal every entry point so your rodent problem doesn't come back next season.</p>
+                <p class="service-detail__desc">Mice and rats don't just damage property, they carry disease and contaminate food. BRD's rodent control goes beyond trapping: we identify and seal every entry point so your rodent problem doesn't come back next season.</p>
                 <ul class="service-detail__bullets">
                     <li>Thorough inspection to locate entry points</li>
                     <li>Trapping and population removal</li>
@@ -218,7 +231,7 @@ get_header();
             <div class="service-detail__text">
                 <span class="service-detail__eyebrow">Mosquito Control</span>
                 <h2>Take Back Your Yard. All Season Long.</h2>
-                <p class="service-detail__desc">Mosquitoes aren't just annoying — they're a health risk. BRD's mosquito treatment targets breeding sites and resting areas across your property, cutting populations by up to 90% so you can actually enjoy being outside.</p>
+                <p class="service-detail__desc">Mosquitoes aren't just annoying, they're a health risk. BRD's mosquito treatment targets breeding sites and resting areas across your property, cutting populations by up to 90% so you can actually enjoy being outside.</p>
                 <ul class="service-detail__bullets">
                     <li>Property inspection and breeding site ID</li>
                     <li>Barrier spray treatment for resting areas</li>
@@ -245,7 +258,7 @@ get_header();
             <div class="service-detail__text">
                 <span class="service-detail__eyebrow">Bed Bug Treatment</span>
                 <h2>Complete Elimination. Every Life Stage.</h2>
-                <p class="service-detail__desc">Bed bugs are one of the most difficult pests to eliminate because surface sprays miss eggs and hidden populations. BRD's treatment protocol targets every life stage — adults, nymphs, and eggs — so the infestation doesn't rebound two weeks later.</p>
+                <p class="service-detail__desc">Bed bugs are one of the most difficult pests to eliminate because surface sprays miss eggs and hidden populations. BRD's treatment protocol targets every life stage, adults, nymphs, and eggs, so the infestation doesn't rebound two weeks later.</p>
                 <ul class="service-detail__bullets">
                     <li>Full room-by-room inspection</li>
                     <li>Treatment targeting all life stages</li>
@@ -264,14 +277,41 @@ get_header();
 
 
 <!-- ================================================
-     8. PROTECTION PLANS
+     8. ATTIC INSULATION
+     ================================================ -->
+<section class="service-detail service-detail--dark service-detail--flip" id="attic-insulation" aria-label="Attic insulation">
+    <div class="container">
+        <div class="service-detail__grid">
+            <div class="service-detail__text">
+                <span class="service-detail__eyebrow">Insulation Services</span>
+                <h2>Comfort, Efficiency, and Pest Protection Above Your Ceiling.</h2>
+                <p class="service-detail__desc">Old, thin, or contaminated attic insulation can make your home harder to heat and cool. BRD inspects the attic, checks for pest damage or moisture concerns, and recommends either capping clean existing insulation or removing and replacing material that is damaged or contaminated.</p>
+                <ul class="service-detail__bullets">
+                    <li>Free attic insulation inspection</li>
+                    <li>Insulation capping for clean, under-insulated attics</li>
+                    <li>Removal and replacement for contaminated insulation</li>
+                    <li>Helps reduce drafts, uneven rooms, and attic noise</li>
+                    <li>Supports broader pest prevention and cleanup</li>
+                </ul>
+                <a href="<?php echo esc_url( home_url( '/insulation-services/' ) ); ?>" class="btn btn-outline">Learn More</a>
+            </div>
+            <div class="service-detail__photo">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/service-insulation-attic-install.jpg' ); ?>" alt="Attic insulation installation in progress" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================================================
+     9. PROTECTION PLANS
      ================================================ -->
 <section class="plans-section" id="protection-plans" aria-label="Protection plans">
     <div class="container">
         <div class="plans-section__header">
             <span class="plans-section__eyebrow">Recurring Protection</span>
             <h2>One Plan. Zero Pest Stress.</h2>
-            <p class="plans-section__sub">Why deal with pests reactively when you can prevent them entirely? BRD's protection plans deliver scheduled treatments, priority scheduling, and free re-services — so your home stays protected all year.</p>
+            <p class="plans-section__sub">Why deal with pests reactively when you can prevent them entirely? BRD's protection plans deliver scheduled treatments, priority scheduling, and free re-services, so your home stays protected all year.</p>
         </div>
         <div class="plans-grid">
 
@@ -287,8 +327,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-outline">Get a Quote</a>
             </div>
 
-            <div class="plan-card plan-card--featured">
-                <span class="plan-card__badge">Most Popular</span>
+            <div class="plan-card">
                 <div class="plan-card__name">Quarterly</div>
                 <div class="plan-card__cadence">4 visits per year</div>
                 <ul class="plan-card__features">
@@ -297,6 +336,21 @@ get_header();
                     <li>Free re-service between visits</li>
                     <li>Priority scheduling</li>
                     <li>Covers 30+ pest species</li>
+                </ul>
+                <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-outline">Get a Quote</a>
+            </div>
+
+            <div class="plan-card plan-card--featured">
+                <span class="plan-card__badge">Most Popular</span>
+                <div class="plan-card__name">Bi-Monthly</div>
+                <div class="plan-card__cadence">6 visits per year</div>
+                <ul class="plan-card__features">
+                    <li>Every-other-month treatments</li>
+                    <li>Interior &amp; exterior every visit</li>
+                    <li>Free re-service between visits</li>
+                    <li>Priority scheduling</li>
+                    <li>Covers 30+ pest species</li>
+                    <li>Seasonal pest adjustments included</li>
                 </ul>
                 <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-red">Get a Quote</a>
             </div>
@@ -320,7 +374,7 @@ get_header();
 
 
 <!-- ================================================
-     9. GUARANTEE STRIP
+     10. GUARANTEE STRIP
      ================================================ -->
 <section class="services-guarantee" aria-label="Our guarantee">
     <div class="container">
@@ -337,7 +391,7 @@ get_header();
                     </svg>
                 </div>
                 <h3>100% Satisfaction Guaranteed</h3>
-                <p>If pests return between scheduled services, so do we — at no additional charge. We don't stop until the job is done.</p>
+                <p>If pests return between scheduled services, so do we, at no additional charge. We don't stop until the job is done.</p>
             </div>
 
             <div class="services-guarantee__item">
@@ -366,7 +420,7 @@ get_header();
 
 
 <!-- ================================================
-     10. CTA
+     11. CTA
      ================================================ -->
 <section class="services-cta" aria-label="Call to action">
     <div class="container">

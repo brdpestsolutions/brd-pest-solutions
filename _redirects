@@ -13,6 +13,8 @@
 /services/rodent-control     /preview-service-rodent-control.html     200
 /services/mosquito-control   /preview-service-mosquito-control.html   200
 /services/bed-bugs           /preview-service-bed-bugs.html           200
+/services/insulation-services /preview-service-insulation-services.html 200
+/insulation-services         /preview-service-insulation-services.html 200
 /services/protection-plans   /preview-service-protection-plans.html   200
 
 /privacy-policy    /preview-privacy-policy.html    200

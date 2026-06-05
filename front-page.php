@@ -1,12 +1,12 @@
 <?php
 /**
- * BRD Pest Solutions — Homepage Template (front-page.php)
+ * BRD Pest Solutions, Homepage Template (front-page.php)
  *
  * TODO: Replace image src values with wp_get_attachment_image() calls
  * once photos are uploaded to the WordPress media library.
  */
 
-// Image paths — update these when uploading to WP media
+// Image paths, update these when uploading to WP media
 $img_hero  = get_template_directory_uri() . '/assets/images/BRDTech-24.jpg';
 $img_why   = get_template_directory_uri() . '/assets/images/BRDTech-29.jpg';
 $img_areas = get_template_directory_uri() . '/assets/images/BRDTech-26.jpg';
@@ -54,7 +54,7 @@ get_header();
                 <span class="hero__bullet-check" aria-hidden="true">
                     <svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg>
                 </span>
-                Flexible scheduling &mdash; same day available
+                Flexible scheduling, same day available
             </li>
             <li class="hero__bullet">
                 <span class="hero__bullet-check" aria-hidden="true">
@@ -171,7 +171,7 @@ get_header();
                         <div class="why-brd__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
                         <div>
                             <p class="why-brd__item-title">Trained &amp; Certified</p>
-                            <p class="why-brd__item-desc">Ongoing training &mdash; not just a one-day cert. We take the work seriously.</p>
+                            <p class="why-brd__item-desc">Ongoing training, not just a one-day cert. We take the work seriously.</p>
                         </div>
                     </li>
                     <li class="why-brd__item">
@@ -219,7 +219,7 @@ get_header();
 
         <div class="services__grid">
 
-            <a href="<?php echo esc_url( home_url( '/services/pest-control' ) ); ?>" class="service-card">
+            <a href="<?php echo esc_url( home_url( '/pest-control/' ) ); ?>" class="service-card">
                 <div class="service-card__icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="6.5" r="2.5"/>
@@ -230,12 +230,26 @@ get_header();
                         <path d="M14.5 11L18 10M14.5 12.5L18 12.5M14.5 14L18 15.5"/>
                     </svg>
                 </div>
-                <h3>Pest Control</h3>
-                <p>Ants, spiders, cockroaches, silverfish, and more — year-round protection.</p>
+                <h3>General Pest Control</h3>
+                <p>Ants, spiders, cockroaches, silverfish, and over 30 other household pests, eliminated and kept out.</p>
                 <span class="service-card__link">Learn more &rarr;</span>
             </a>
 
-            <a href="<?php echo esc_url( home_url( '/services/rodent-control' ) ); ?>" class="service-card">
+            <a href="<?php echo esc_url( home_url( '/termite-control/' ) ); ?>" class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                        <circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none"/>
+                        <circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                </div>
+                <h3>Termite Control</h3>
+                <p>Silent and destructive. BRD's termite treatments protect your home's structure before and after damage starts.</p>
+                <span class="service-card__link">Learn more &rarr;</span>
+            </a>
+
+            <a href="<?php echo esc_url( home_url( '/rodent-control/' ) ); ?>" class="service-card">
                 <div class="service-card__icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <ellipse cx="10" cy="16" rx="7" ry="4.5"/>
@@ -248,11 +262,11 @@ get_header();
                     </svg>
                 </div>
                 <h3>Rodent Control</h3>
-                <p>Full exclusion, baiting, and follow-up. No half measures.</p>
+                <p>Locating, trapping, and removing rodents. We service your traps quarterly, checking, clearing, and refreshing to keep activity under control.</p>
                 <span class="service-card__link">Learn more &rarr;</span>
             </a>
 
-            <a href="<?php echo esc_url( home_url( '/services/mosquito-control' ) ); ?>" class="service-card">
+            <a href="<?php echo esc_url( home_url( '/mosquito-control/' ) ); ?>" class="service-card">
                 <div class="service-card__icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <ellipse cx="12" cy="14" rx="1.5" ry="5"/>
@@ -264,11 +278,11 @@ get_header();
                     </svg>
                 </div>
                 <h3>Mosquito Control</h3>
-                <p>Take back your yard. Seasonal and one-time treatments available.</p>
+                <p>Take back your yard. Seasonal programs and one-time treatments that cut mosquito populations by up to 90%.</p>
                 <span class="service-card__link">Learn more &rarr;</span>
             </a>
 
-            <a href="<?php echo esc_url( home_url( '/services/bed-bugs' ) ); ?>" class="service-card">
+            <a href="<?php echo esc_url( home_url( '/bed-bugs/' ) ); ?>" class="service-card">
                 <div class="service-card__icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <ellipse cx="12" cy="13.5" rx="5.5" ry="4"/>
@@ -278,26 +292,27 @@ get_header();
                         <path d="M17.5 12L20 10.5M17.5 13.5L20 13.5M17.5 15L20 16.5"/>
                     </svg>
                 </div>
-                <h3>Bed Bugs</h3>
-                <p>Complete elimination &mdash; not just surface treatment.</p>
+                <h3>Bed Bug Treatment</h3>
+                <p>Complete elimination, not just surface treatment. We target every life stage so they don't come back.</p>
                 <span class="service-card__link">Learn more &rarr;</span>
             </a>
 
-            <a href="<?php echo esc_url( home_url( '/services/termite-control' ) ); ?>" class="service-card">
+            <a href="<?php echo esc_url( home_url( '/insulation-services/' ) ); ?>" class="service-card">
                 <div class="service-card__icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
-                        <circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none"/>
-                        <circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none"/>
+                        <path d="M4 4h16v16H4z"/>
+                        <path d="M4 9h16"/>
+                        <path d="M9 4v16"/>
+                        <path d="M15 4v16"/>
+                        <path d="M4 15h16"/>
                     </svg>
                 </div>
-                <h3>Termite Control</h3>
-                <p>Protect your biggest investment before damage starts.</p>
+                <h3>Insulation Services</h3>
+                <p>Attic insulation inspection, capping, removal, and replacement to improve comfort, efficiency, noise control, and pest protection.</p>
                 <span class="service-card__link">Learn more &rarr;</span>
             </a>
 
-            <a href="<?php echo esc_url( home_url( '/services' ) ); ?>" class="service-card">
+            <a href="<?php echo esc_url( home_url( '/protection-plans/' ) ); ?>" class="service-card service-card--wide">
                 <div class="service-card__icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -305,8 +320,8 @@ get_header();
                     </svg>
                 </div>
                 <h3>Protection Plans</h3>
-                <p>Year-round coverage from one low monthly rate. Set it and forget it.</p>
-                <span class="service-card__link">See plans &rarr;</span>
+                <p>Year-round coverage from one recurring plan. Set it and forget it, we handle the rest.</p>
+                <span class="service-card__link">View plans &rarr;</span>
             </a>
 
         </div>
@@ -376,7 +391,7 @@ get_header();
                 <span class="service-areas__eyebrow">Where We Operate</span>
                 <h2>Serving 5 States Across the US</h2>
                 <p class="service-areas__body">
-                    BRD deploys local teams across Georgia, Maryland, Oklahoma, Texas, and Utah — technicians who know your region, your pests, and your community.
+                    BRD deploys local teams across Georgia, Maryland, Oklahoma, Texas, and Utah, technicians who know your region, your pests, and your community.
                 </p>
 
                 <div class="service-areas__states">
@@ -462,7 +477,7 @@ get_header();
 <section class="final-cta" aria-label="Get a quote">
     <div class="container">
         <h2>Ready to Get Your Home Protected?</h2>
-        <p class="final-cta__sub">Start with a free quote &mdash; no commitment, no hassle.</p>
+        <p class="final-cta__sub">Start with a free quote. No commitment, no hassle.</p>
         <div class="final-cta__buttons">
             <a href="<?php echo esc_url( home_url( '/get-a-quote' ) ); ?>" class="btn btn-red btn-lg">
                 Get a Free Quote
